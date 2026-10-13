@@ -5,14 +5,21 @@
   "creators": [
     {
       "name": "Song, Hael",
-      "affiliation": "Korea University, Seoul, Republic of Korea",
-      "orcid": "0000-0000-0000-0000"
+      "affiliation": "Korea University, Seoul, Republic of Korea"
     }
   ],
-  "keywords": ["structured coalescent", "phylogeography", "tensor train", "matrix product state", "MASCOT", "exact likelihood", "phylodynamics"],
+  "keywords": [
+    "structured coalescent",
+    "phylogeography",
+    "tensor train",
+    "matrix product state",
+    "MASCOT",
+    "exact likelihood",
+    "phylodynamics"
+  ],
   "license": "MIT",
   "access_right": "open",
   "version": "1.0.0",
   "language": "eng",
-  "notes": "Third-party data keep their own licences (CC BY 4.0, CC BY 3.0, GPL-3.0); see LICENSE and data/README.md. Replace the ORCID placeholder before the first release."
+  "notes": "Third-party data keep their own licences (CC BY 4.0, CC BY 3.0, GPL-3.0); see LICENSE and data/README.md."
 }

@@ -11,7 +11,6 @@ authors:
     given-names: Hael
     affiliation: "Korea University, Seoul, Republic of Korea"
     email: hesong0222@korea.ac.kr
-    # orcid: "https://orcid.org/0000-0000-0000-0000"   # TODO(author): add ORCID
 keywords:
   - structured coalescent
   - phylogeography
