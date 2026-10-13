@@ -1,0 +1,47 @@
+{
+ "engine": "mascot",
+ "model": "asym",
+ "loglik": -265.3886910363467,
+ "theta": [
+  -1.3241532950794512,
+  0.4068964262944725,
+  -12.0,
+  -0.9302350712867312,
+  -12.0,
+  -0.4158675061446895,
+  0.43887833903324586,
+  -0.55426625490353,
+  1.5479446811996744
+ ],
+ "params": {
+  "m01": 0.39319962261042424,
+  "m02": 1.2603006212158274,
+  "m10": 6.14421235332821e-06,
+  "m12": 0.1908099091879076,
+  "m20": 6.14421235332821e-06,
+  "m21": 0.42352495253278766,
+  "Ne0": 1.5649943923737155,
+  "Ne1": 0.5814447389454286,
+  "Ne2": 4.360334718982583
+ },
+ "root_probs": [
+  6.213256202940903e-07,
+  0.9505624181078891,
+  0.049436960566490655
+ ],
+ "grad_norm": 0.0001967777531685224,
+ "nev": 660,
+ "msg": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+ "fixed": null,
+ "n_starts": 7,
+ "starts": [
+  "multistart",
+  "multistart",
+  "multistart",
+  "sisco_mascot_asym_seed_masco_mode_C.json",
+  "multistart",
+  "sisco_mascot_asym_x0.json",
+  "multistart"
+ ],
+ "source": "sisco_refine_asym_L264670.json best (it 2, exact -270.64836); Kaggle 12 h limit"
+}

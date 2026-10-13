@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this software or these results, please cite the paper (preferred-citation) and this archive."
+title: "TT-ESCO: exact structured-coalescent likelihoods with tensor trains (code, benchmarks and data)"
+version: 1.0.0
+date-released: "2026-10-22"   # TODO(author): set to the GitHub release date
+license: MIT
+repository-code: "https://github.com/hesong0222-dev/esco-tt"
+# doi: 10.5281/zenodo.XXXXXXX   # TODO(author): add the Zenodo DOI after the first release
+authors:
+  - family-names: Song
+    given-names: Hael
+    affiliation: "Korea University, Seoul, Republic of Korea"
+    email: hesong0222@korea.ac.kr
+    # orcid: "https://orcid.org/0000-0000-0000-0000"   # TODO(author): add ORCID
+keywords:
+  - structured coalescent
+  - phylogeography
+  - tensor train
+  - matrix product state
+  - MASCOT
+  - exact likelihood
+preferred-citation:
+  type: article
+  title: "Exact structured-coalescent likelihoods beyond the full state space with tensor trains"
+  authors:
+    - family-names: Song
+      given-names: Hael
+      affiliation: "Korea University, Seoul, Republic of Korea"
+  status: preprint   # TODO(author): replace with bioRxiv DOI / journal details

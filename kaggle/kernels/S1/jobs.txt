@@ -1,0 +1,5 @@
+d3_k30_fast_r0
+d3_k30_slow_r1
+d3_k40_slow_r0
+d3_k50_medium_r1
+d3_k60_medium_r0

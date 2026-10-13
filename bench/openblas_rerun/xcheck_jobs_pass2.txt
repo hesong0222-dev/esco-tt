@@ -1,0 +1,8 @@
+d4_k18_slow_r1.json 1e-6
+d4_k14_medium_r1.json 1e-6
+d4_k18_medium_r0.json 1e-6
+d4_k18_medium_r1.json 1e-6
+d4_k20_medium_r2.json 1e-6
+d4_k18_medium_r0.json 1e-7
+d4_k18_medium_r1.json 1e-7
+d4_k20_medium_r2.json 1e-7

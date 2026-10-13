@@ -1,0 +1,98 @@
+
+### masco asym
+
+| point | name | starts | MASCOT logL | exact logL | MASCOT − exact | root MASCOT | root exact |
+|---|---|---|---|---|---|---|---|
+| asym_hubans | hub (gal Ne 0.30) |  | -281.478 | -281.507 | 0.029 | 1.000/0.000/0.000 | 1.000/0.000/0.000 |
+| exact near asym_hubans | hub (gal Ne 0.30) |  | -281.478 | -281.507 | 0.029 |  | 1.000/0.000/0.000 |
+| asym_modeA | hub (gal Ne 0.27) |  | -284.408 | -290.300 | 5.892 | 0.250/0.000/0.750 | 0.594/0.000/0.406 |
+| exact near asym_modeA | hub (gal Ne 0.29) |  | -282.004 | -282.118 | 0.114 |  | 1.000/0.000/0.000 |
+| exact near asym_modeAcont | hub (gal Ne 0.30) |  | -281.556 | -281.587 | 0.031 |  | 1.000/0.000/0.000 |
+| asym_modeC | cha root |  | -285.041 | -292.239 | 7.198 | 0.000/0.977/0.023 | 0.000/0.974/0.026 |
+| exact near asym_modeC | cha root |  | -285.041 | -292.239 | 7.198 |  | 0.000/0.974/0.026 |
+
+### masco sym
+
+| point | name | starts | MASCOT logL | exact logL | MASCOT − exact | root MASCOT | root exact |
+|---|---|---|---|---|---|---|---|
+| sym_regular | cha root |  | -294.624 | -302.617 | 7.992 | 0.166/0.738/0.096 | 0.263/0.626/0.111 |
+| exact near sym_regular | cha root |  | -295.473 | -301.930 | 6.457 |  | 0.200/0.611/0.190 |
+| sym_hubcont | hub (gal Ne 0.10) |  | -296.304 | -296.304 | 0.000 | 0.100/0.022/0.878 | 0.100/0.022/0.878 |
+| exact near sym_hubcont | hub (gal Ne 0.10) |  | -288.549 | -296.304 | 7.755 |  | 0.100/0.022/0.878 |
+
+### masco exact optima: parameters, KKT, h/2 check
+
+exact near asym_hubans exact optimum iters 1 pred_gain_last 0.007481041254824707 KKT {"m01": -1.279, "m02": -1.267, "m10": -0.032, "m21": -0.006} h2 -281.5074071864692 err 0.00023788696904603057 {'m01': 0.0, 'm02': 0.0, 'm10': 0.0, 'm12': 16.891, 'm20': 0.5119, 'm21': 0.0, 'Ne0': 5.2187, 'Ne1': 3.0323, 'Ne2': 0.2962}
+exact near asym_modeA exact optimum iters 8 pred_gain_last 0.04373432237509368 KKT {"m02": -1.187, "m10": -0.032, "m21": -0.006} h2 -282.11847648854183 err 0.0007966049880678838 {'m01': 0.0095, 'm02': 0.0, 'm10': 0.0, 'm12': 16.4893, 'm20': 0.5715, 'm21': 0.0, 'Ne0': 5.1665, 'Ne1': 3.0229, 'Ne2': 0.294}
+exact near asym_modeAcont exact optimum iters 4 pred_gain_last 0.008535495872801797 KKT {"m02": -1.253, "m10": -0.032, "m21": -0.007} h2 -281.58758936268765 err 0.00035502503112638806 {'m01': 0.0013, 'm02': 0.0, 'm10': 0.0, 'm12': 16.6138, 'm20': 0.5212, 'm21': 0.0, 'Ne0': 5.2118, 'Ne1': 3.0289, 'Ne2': 0.3002}
+exact near asym_modeC exact optimum iters 1 pred_gain_last 2.9386510645157093 KKT {"m10": -0.15, "m20": -0.246} h2 -292.23919676260124 err 0.00041203185867288994 {'m01': 0.3974, 'm02': 1.1411, 'm10': 0.0, 'm12': 0.1632, 'm20': 0.0, 'm21': 0.5656, 'Ne0': 1.7693, 'Ne1': 0.8621, 'Ne2': 4.5589}
+exact near sym_regular exact optimum iters 3 pred_gain_last 0.003908998727221875 KKT {} h2 -301.9276153947466 err 0.0020371607856191076 {'m01': 0.3587, 'm02': 0.3561, 'm12': 0.3047, 'Ne0': 3.2253, 'Ne1': 0.8827, 'Ne2': 1.8152}
+exact near sym_hubcont exact optimum iters 1 pred_gain_last 0.023835897515715857 KKT {"m02": -0.07} h2 -296.95221493831417 err 0.6479239913384163 {'m01': 0.2764, 'm02': 0.0, 'm12': 21.6818, 'Ne0': 5.1659, 'Ne1': 5.6078, 'Ne2': 0.1047}
+
+### sisco asym
+
+| point | name | starts | MASCOT logL | exact logL | MASCOT − exact | root MASCOT | root exact |
+|---|---|---|---|---|---|---|---|
+| asym_L264670 | cha root | 7 | -264.670 | -271.448 | 6.778 | 0.000/0.951/0.049 | 0.000/0.943/0.057 |
+| exact near asym_L264670 (unfinished) | cha root |  | -265.389 | -270.648 | 5.260 |  | 0.000/0.930/0.070 |
+| exact near asym_L264670cont (unfinished) | cha root |  | -265.665 | -270.629 | 4.965 |  | 0.000/0.937/0.063 |
+| asym_L264705 | gal root | 5 | -264.705 | -266.240 | 1.535 | 0.000/0.005/0.995 | 0.000/0.004/0.996 |
+| exact near asym_L264705 | gal root |  | -264.802 | -266.060 | 1.258 |  | 0.000/0.001/0.999 |
+| asym_L266604 | hub (gal Ne 0.28) | 1 | -266.604 | -266.637 | 0.032 | 1.000/0.000/0.000 | 1.000/0.000/0.000 |
+| exact near asym_L266604 | hub (gal Ne 0.27) |  | -266.623 | -266.621 | -0.002 |  | 1.000/0.000/0.000 |
+| asym_L273091 | ans root | 1 | -273.091 | -273.086 | -0.005 | 1.000/0.000/0.000 | 1.000/0.000/0.000 |
+| asym_L275319 | ans root | 1 | -275.319 | -275.583 | 0.264 | 1.000/0.000/0.000 | 1.000/0.000/0.000 |
+
+### sisco sym
+
+| point | name | starts | MASCOT logL | exact logL | MASCOT − exact | root MASCOT | root exact |
+|---|---|---|---|---|---|---|---|
+| sym_L274067 | cha root | 12 | -274.067 | -281.655 | 7.588 | 0.175/0.751/0.074 | 0.256/0.644/0.100 |
+| exact near sym_L274067 (unfinished) | cha root |  | -274.568 | -281.077 | 6.510 |  | 0.209/0.669/0.123 |
+| exact near sym_L274067cont | cha root |  | -274.750 | -281.047 | 6.298 |  | 0.197/0.672/0.131 |
+| sym_L276101 | hub (gal Ne 0.10) | 1 | -276.101 | -283.302 | 7.201 | 0.085/0.086/0.829 | 0.100/0.091/0.809 |
+| exact near sym_L276101 | hub (gal Ne 0.10) |  | -276.136 | -283.237 | 7.101 |  | 0.111/0.092/0.797 |
+
+### sisco exact optima: parameters, KKT, h/2 check
+
+exact near asym_L264670 exact (refinement unfinished) iters 3 pred_gain_last 0.008352242813956261 KKT  h2 None err None {'m01': 0.266, 'm02': 1.5021, 'm10': 0.0, 'm12': 0.3945, 'm20': 0.0, 'm21': 0.6598, 'Ne0': 1.551, 'Ne1': 0.5745, 'Ne2': 4.7018}
+exact near asym_L264670cont exact (refinement unfinished) iters 2 pred_gain_last 0.05728288459286041 KKT  h2 None err None {'m01': 0.2343, 'm02': 1.5688, 'm10': 0.0, 'm12': 0.4432, 'm20': 0.0, 'm21': 0.7557, 'Ne0': 1.5235, 'Ne1': 0.5778, 'Ne2': 5.0186}
+exact near asym_L264705 exact optimum iters 5 pred_gain_last 0.005517864080067013 KKT {"m01": -0.292, "m10": -0.046, "m20": -0.361} h2 -266.059700449322 err 0.00024167486230908253 {'m01': 0.0, 'm02': 1.6215, 'm10': 0.0, 'm12': 0.4579, 'm20': 0.0, 'm21': 0.03, 'Ne0': 1.7701, 'Ne1': 0.6061, 'Ne2': 3.3972}
+exact near asym_L266604 exact optimum iters 2 pred_gain_last 0.00021523800758733178 KKT {"m01": -1.246, "m02": -1.239, "m10": -0.018, "m21": -0.002} h2 -266.62113811939207 err 0.00040376200399805384 {'m01': 0.0, 'm02': 0.0, 'm10': 0.0, 'm12': 31.0029, 'm20': 0.5287, 'm21': 0.0, 'Ne0': 4.858, 'Ne1': 2.3837, 'Ne2': 0.2736}
+exact near sym_L274067 exact (refinement unfinished) iters 2 pred_gain_last 0.03647929652181827 KKT  h2 None err None {'m01': 0.3404, 'm02': 0.3854, 'm12': 0.2946, 'Ne0': 2.8334, 'Ne1': 0.5896, 'Ne2': 2.2676}
+exact near sym_L274067cont exact optimum iters 2 pred_gain_last 0.004675468878593166 KKT {} h2 -281.0211147087477 err 0.02620180252120008 {'m01': 0.3526, 'm02': 0.3738, 'm12': 0.3182, 'Ne0': 2.8959, 'Ne1': 0.5926, 'Ne2': 2.0973}
+exact near sym_L276101 exact optimum iters 2 pred_gain_last 0.02598171307127021 KKT {"m02": -0.084} h2 -283.27184969406005 err 0.03455278431727038 {'m01': 0.2649, 'm02': 0.0, 'm12': 25.2683, 'Ne0': 4.8753, 'Ne1': 1.1097, 'Ne2': 0.0985}
+
+### lisco asym
+
+| point | name | starts | MASCOT logL | exact logL | MASCOT − exact | root MASCOT | root exact |
+|---|---|---|---|---|---|---|---|
+| asym_L256886 | cha root | 7 | -256.886 | -263.323 | 6.438 | 0.000/0.947/0.053 | 0.000/0.940/0.060 |
+| exact near asym_L256886 (unfinished) | cha root |  | -257.563 | -262.417 | 4.854 |  | 0.000/0.935/0.065 |
+| exact near asym_L256886cont | cha root |  | -257.761 | -262.365 | 4.604 |  | 0.000/0.934/0.066 |
+| asym_L257131 | gal root | 5 | -257.131 | -258.783 | 1.652 | 0.000/0.006/0.994 | 0.000/0.004/0.996 |
+| exact near asym_L257131 | gal root |  | -257.236 | -258.572 | 1.336 |  | 0.000/0.001/0.999 |
+| asym_L261846 | hub (gal Ne 0.36) | 2 | -261.846 | -261.906 | 0.060 | 1.000/0.000/0.000 | 1.000/0.000/0.000 |
+| exact near asym_L261846 | hub (gal Ne 0.36) |  | -261.846 | -261.906 | 0.060 |  | 1.000/0.000/0.000 |
+| asym_L266754 | hub (cha Ne 0.49) | 1 | -266.754 | -266.740 | -0.014 | 1.000/0.000/0.000 | 1.000/0.000/0.000 |
+| asym_L269092 | ans root | 1 | -269.092 | -269.363 | 0.271 | 1.000/0.000/0.000 | 1.000/0.000/0.000 |
+
+### lisco sym
+
+| point | name | starts | MASCOT logL | exact logL | MASCOT − exact | root MASCOT | root exact |
+|---|---|---|---|---|---|---|---|
+| sym_L267082 | cha root | 12 | -267.082 | -274.688 | 7.606 | 0.155/0.775/0.070 | 0.231/0.672/0.098 |
+| exact near sym_L267082 (unfinished) | cha root |  | -267.387 | -274.225 | 6.839 |  | 0.185/0.700/0.115 |
+| exact near sym_L267082cont (unfinished) | cha root |  | -267.877 | -274.077 | 6.200 |  | 0.166/0.736/0.098 |
+| sym_L271007 | hub (gal Ne 0.10) | 1 | -271.007 | -277.884 | 6.878 | 0.080/0.159/0.761 | 0.092/0.172/0.736 |
+| exact near sym_L271007 | hub (gal Ne 0.10) |  | -271.011 | -277.873 | 6.862 |  | 0.097/0.170/0.733 |
+
+### lisco exact optima: parameters, KKT, h/2 check
+
+exact near asym_L256886 exact (refinement unfinished) iters 3 pred_gain_last 0.02417403640601024 KKT  h2 None err None {'m01': 0.1187, 'm02': 1.7148, 'm10': 0.0, 'm12': 0.4594, 'm20': 0.0, 'm21': 0.7317, 'Ne0': 1.4592, 'Ne1': 0.474, 'Ne2': 5.0103}
+exact near asym_L256886cont exact optimum iters 3 pred_gain_last 0.0011608727048577358 KKT {"m10": -0.137, "m20": -0.261} h2 -262.3682464174823 err 0.0029997009579005862 {'m01': 0.0918, 'm02': 1.7436, 'm10': 0.0, 'm12': 0.5284, 'm20': 0.0, 'm21': 0.7787, 'Ne0': 1.4498, 'Ne1': 0.4714, 'Ne2': 5.2888}
+exact near asym_L257131 exact optimum iters 5 pred_gain_last 0.007787379356058847 KKT {"m01": -0.288, "m10": -0.044, "m20": -0.394} h2 -258.5711556833284 err 0.0007222928041414889 {'m01': 0.0, 'm02': 1.6119, 'm10': 0.0, 'm12': 0.4771, 'm20': 0.0, 'm21': 0.0301, 'Ne0': 1.7312, 'Ne1': 0.4965, 'Ne2': 3.4387}
+exact near asym_L261846 exact optimum iters 1 pred_gain_last 0.0034041351523795673 KKT {"m01": -1.209, "m02": -1.207, "m10": -0.007, "m21": -0.001} h2 -261.90497389919824 err 0.0006116214691473942 {'m01': 0.0, 'm02': 0.0, 'm10': 0.0, 'm12': 86.4523, 'm20': 0.4978, 'm21': 0.0, 'Ne0': 4.8587, 'Ne1': 1096.6332, 'Ne2': 0.3557}
+exact near sym_L267082 exact (refinement unfinished) iters 2 pred_gain_last 0.19029968625411833 KKT  h2 None err None {'m01': 0.3256, 'm02': 0.3727, 'm12': 0.2716, 'Ne0': 3.0089, 'Ne1': 0.4825, 'Ne2': 2.1526}
+exact near sym_L267082cont exact (refinement unfinished) iters 2 pred_gain_last 0.027886983088899794 KKT  h2 None err None {'m01': 0.3839, 'm02': 0.3773, 'm12': 0.3407, 'Ne0': 2.9595, 'Ne1': 0.4923, 'Ne2': 2.3067}
+exact near sym_L271007 exact optimum iters 2 pred_gain_last 0.00703198256865209 KKT {"m02": -0.055} h2 -277.7733845586367 err 0.09919586926650936 {'m01': 0.2772, 'm02': 0.0, 'm12': 19.7513, 'Ne0': 4.91, 'Ne1': 0.5897, 'Ne2': 0.0999}

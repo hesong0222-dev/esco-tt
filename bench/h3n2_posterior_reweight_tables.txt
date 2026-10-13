@@ -1,0 +1,56 @@
+states after 10% burn-in: 361 (of 401); exact engine counts: {'dense': 357, 'tt1e-6': 4}
+l_exact - l_ours (MASCOT model error, sign flipped): median -0.350, range -2.916 … +0.395, sd 0.438
+Kish ESS: sample->C 352.9, sample->E 309.1, C->E 320.5 (n = 361); max normalised weight sample->E 0.008
+  sample->E ESS bootstrap 95%: 301.2 … 316.3
+corr(l_exact - l_ours, tree height) = +0.24
+
+| quantity | posterior | mean | median | 95% HPD | shift of mean vs C |
+|---|---|---|---|---|---|
+| Ne_HK | C | 1.404 | 0.9482 | 0.119 – 4.09 |  |
+| Ne_HK | E | 1.41 | 0.9106 | 0.165 – 4.27 | +0.5% |
+| Ne_NY | C | 1.961 | 1.327 | 0.18 – 5.8 |  |
+| Ne_NY | E | 1.962 | 1.327 | 0.179 – 5.8 | +0.1% |
+| Ne_NZ | C | 0.8676 | 0.6912 | 0.124 – 2.18 |  |
+| Ne_NZ | E | 0.8949 | 0.7243 | 0.133 – 2.19 | +3.1% |
+| m_HK_to_NY | C | 1.15 | 0.709 | 0.00539 – 3.82 |  |
+| m_HK_to_NY | E | 1.177 | 0.709 | 0.0194 – 3.88 | +2.3% |
+| m_HK_to_NZ | C | 0.4971 | 0.312 | 0.000242 – 1.67 |  |
+| m_HK_to_NZ | E | 0.4679 | 0.3025 | 0.000242 – 1.5 | -5.9% |
+| m_NY_to_HK | C | 1.357 | 1.158 | 0.00747 – 3.2 |  |
+| m_NY_to_HK | E | 1.447 | 1.253 | 0.00747 – 3.35 | +6.6% |
+| m_NY_to_NZ | C | 0.5999 | 0.3843 | 0.000623 – 1.88 |  |
+| m_NY_to_NZ | E | 0.5673 | 0.3707 | 0.000844 – 1.74 | -5.4% |
+| m_NZ_to_HK | C | 0.7389 | 0.5668 | 0.00296 – 2.01 |  |
+| m_NZ_to_HK | E | 0.7743 | 0.5894 | 0.00296 – 2.13 | +4.8% |
+| m_NZ_to_NY | C | 0.8254 | 0.5816 | 0.00627 – 2.12 |  |
+| m_NZ_to_NY | E | 0.83 | 0.612 | 0.00627 – 2.18 | +0.6% |
+| Tree.height | C | 3.614 | 3.567 | 2.68 – 4.56 |  |
+| Tree.height | E | 3.664 | 3.604 | 2.63 – 4.63 | +1.4% |
+| clockRate | C | 0.003995 | 0.003955 | 0.00279 – 0.00508 |  |
+| clockRate | E | 0.003962 | 0.003897 | 0.00274 – 0.00502 | -0.8% |
+
+Root-deme posterior probability (mean of per-state root distribution):
+
+| posterior | root model | HK | NY | NZ |
+|---|---|---|---|---|
+| C | mascot | 0.495 | 0.264 | 0.240 |
+| E | mascot | 0.528 | 0.262 | 0.210 |
+| E | exact | 0.531 | 0.263 | 0.206 |
+
+per-state |P_exact(root HK) - P_MASCOT(root HK)|: median 0.012, max 0.152
+
+Bootstrap (1000 resamples of states) of the C->E relative mean shift:
+
+| quantity | shift | 95% CI |
+|---|---|---|
+| Ne_HK | +0.5% | -3.2% … +4.0% |
+| Ne_NY | +0.1% | -3.1% … +3.0% |
+| Ne_NZ | +3.1% | +1.0% … +5.4% |
+| m_HK_to_NY | +2.3% | -1.0% … +5.5% |
+| m_HK_to_NZ | -5.9% | -9.7% … -1.6% |
+| m_NY_to_HK | +6.6% | +4.2% … +8.9% |
+| m_NY_to_NZ | -5.4% | -8.8% … -2.4% |
+| m_NZ_to_HK | +4.8% | +2.0% … +7.6% |
+| m_NZ_to_NY | +0.6% | -2.1% … +3.3% |
+| Tree.height | +1.4% | +0.8% … +2.0% |
+| clockRate | -0.8% | -1.3% … -0.3% |

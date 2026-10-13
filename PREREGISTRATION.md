@@ -1,0 +1,282 @@
+# Pre-registration of the maximum-likelihood study
+
+This file reproduces `bench/mle_prereg.md`, the pre-registration of the maximum-likelihood (MLE) study
+(`bench/mle_study.md`, Table 1 of the paper), unchanged.
+
+**Registration timestamp.** The file was committed as commit `f7130487826087138bc744133d47b0aac9d5880c`
+(f713048, 2026-10-06 14:05:15 +0900 = 14:05 KST), "ESCO: MLE study pre-registration (before results), audits", in
+the author's private development repository, before any result of the main runs had been downloaded. That
+repository is not public; the commit can be shown to editors and reviewers on request. The registered file has not
+changed since (sha256 of `bench/mle_prereg.md` at f713048 and in this repository:
+`c6add5b4c4b071059cba1e20fed5e87ba5bb9b297a88e5e8bfed5773541c25cf`).
+
+**Registered code and trees.** The registration fixes the sha256 of the code and of the 200 simulated trees used.
+- The 200 trees are `bench/mle/trees/*.json`; all 200 match the registered hashes.
+- The registered code version is kept in `preregistration/registered_code/` (`approx/`, `bench/mle_common.py`,
+  `bench/mle_fit.py`, `sim/simulate.py`, `tt/`); all 7 files match the registered hashes. The current files in the
+  repository differ from it, by the changes described in `bench/mle_study.md` and in the paper's Methods
+  ("Maximum-likelihood study": two post-hoc changes, both reported).
+- The registered list also contains `dataset-metadata.json`, the metadata file of the Kaggle dataset that carried the
+  code; it holds only an account-specific dataset id and is not included.
+
+## English translation (by the author; the Korean original below is authoritative)
+
+Title: Pre-registration of the MLE bias study (2026-10-06 14:05 KST, written before seeing the main results).
+At the time of writing, no result of the main run (17 Kaggle kernels) had been downloaded (only one pilot tree).
+
+**Primary measures** (per setting: d3k30 slow, d3k50 slow, d4k30 slow, d4k50 slow, medium control)
+1. Paired difference per tree Δ = log m̂(MASCOT) − log m̂(exact). Summary: median + bootstrap 95% CI (10,000 resamples).
+2. Exact-likelihood loss L_loss = logL_exact(θ̂_exact) − logL_exact(θ̂_MASCOT). Summary: median, share above 1.92
+   (half the χ²₁ 95% point).
+Secondary: bias and RMSE relative to the true value (log scale, median), profile 95% interval coverage (Wilson CI),
+the same measures for Ne.
+
+**Decision rule (fixed in advance)**
+- Equivalence margin: |median Δ| < 0.05 and 95% CI inside (−0.10, 0.10) → "no practical difference".
+- CI excludes 0 and |median Δ| ≥ 0.10 → "systematic difference".
+- Otherwise → "inconclusive (insufficient power)".
+- Prior prediction (internal audit, based on scans of 2 trees): Δ ≈ −0.2 in the slow settings (MASCOT estimates m
+  about 18% lower), small |Δ| in the medium setting.
+
+**Analysis rules**
+- Paired comparison only on trees where both engines' fits completed. Report the completion rate against the planned
+  number of trees per setting; fill incomplete trees with resumed runs before the final analysis (target 100%).
+  For duplicate runs of the same tree, record the source kernel and use the fit with the highest logL.
+- Multiple comparisons: only the 2 primary measures × 5 settings are used for decisions; everything else is
+  descriptive.
+- Limits stated in advance: single symmetric m and balanced sampling, so direction-specific migration, root
+  inference, LRT type-I error and bias of the BEAST2 MASCOT implementation cannot be addressed by this study.
+
+## Original (verbatim copy of `bench/mle_prereg.md` at f713048)
+
+# MLE 편향 연구 사전 등록 (2026-10-06 14:05 KST, 본 실행 결과를 보기 전에 작성)
+
+결과 확인 시점: 이 파일 작성 시점에 본 실행(17개 Kaggle 커널) 결과는 하나도 내려받지 않았음(kaggle/out에는 pilot 1그루만 존재).
+
+## 주 지표 (설정별: d3k30 slow, d3k50 slow, d4k30 slow, d4k50 slow, medium 대조)
+1. 그루별 짝 차이 Δ = log m̂(MASCOT) − log m̂(exact). 요약: 중앙값 + 부트스트랩 95% CI(10,000회).
+2. 정확 가능도 손실 L_loss = logL_exact(θ̂_exact) − logL_exact(θ̂_MASCOT). 요약: 중앙값, 1.92(χ²₁ 95% 절반) 초과 비율.
+보조: 참값 대비 편향·RMSE(log 척도, 중앙값), 프로파일 95% 구간 포함률(Wilson CI), Ne에 대한 같은 지표.
+
+## 판정 기준 (사전에 고정)
+- 동등성 여유폭: |중앙값 Δ| < 0.05 이고 95% CI가 (−0.10, 0.10) 안 → "실질적 차이 없음".
+- CI가 0을 벗어나고 |중앙값 Δ| ≥ 0.10 → "체계적 차이 있음".
+- 그 외 → "결론 유보(검정력 부족)".
+- 사전 예측(감사 AUDIT_MLE.md, 나무 2그루 스캔 기반): slow 설정에서 Δ ≈ −0.2 (MASCOT이 m을 약 18% 작게), medium에서 |Δ| 작음.
+
+## 분석 규칙
+- 짝 비교는 두 엔진의 적합이 모두 완료된 그루만. 계획 그루 수 대비 완료율을 설정별로 보고하고, 미완 그루는 재개 실행으로 채운 뒤 최종 분석(완료율 100% 목표). 같은 그루의 중복 실행은 출처 커널을 기록하고 최고 logL 적합을 채택.
+- 다중 비교: 주 지표 2개 × 설정 5개만 판정에 쓰고 나머지는 기술 통계로만 보고.
+- 한계로 미리 명시: 단일 대칭 m, 균형 표집 → 방향별 이동·근원 추론, LRT 1종 오류, BEAST2 MASCOT 구현의 편향은 이 연구로 말할 수 없음.
+
+## 코드·자료 고정 (kaggle/mle_ds sha256)
+```
+f4f1575e8e981c8581d709abb22189da25930f0e6ef3d8d3d11b8180227f0145  ./approx/mascot.py
+71ab3fd90fa3c414e80f30cda3c7f5331b8c8ab41a3ae117c2d4623373fa5743  ./bench/mle_common.py
+f3a6596c2bb1416e9305a1352ab7409845ad1c881a0d57b4f21c06efdbaabab0  ./bench/mle_fit.py
+d0d704f72cd36fba03f6a9657d37f4b8f4542d8db1387742f788ed06db27400a  ./dataset-metadata.json
+4864a23a17084b8b037cadaaa8fb7cd66a40712fbd6ed3152e08545c7163c536  ./sim/simulate.py
+66bd97b529c64d78f19d30f1bf4e87cd772c32a661ba0cf0aedf25bea8fee325  ./trees/d3_k30_medium_r00.json
+5c16081b07bbdc75c99c1f79ef8a319522b6a971995c145f30eeb95a32e6d6e8  ./trees/d3_k30_medium_r01.json
+d70c6a7a90c266beb8bbe2c2bf3adc87161ae04a32f1dcb2ef751749f7eca5b4  ./trees/d3_k30_medium_r02.json
+9f7db7d7057f89b40bfcc6a9699a40a778da2fab07b85a98dfda251d34eaab0b  ./trees/d3_k30_medium_r03.json
+25a75f0cfcc4ebcce7d9d0037e1223c8e7991eb3057192b7df4d6dd16af42a40  ./trees/d3_k30_medium_r04.json
+9417432424174815ef47dfd4d9f47e7d4ff4f8e8636a02c1a23528a97ca4d442  ./trees/d3_k30_medium_r05.json
+367e1c7f7f0cd40859be71441a003060d23f6a5b533465b13977d0d85ae16473  ./trees/d3_k30_medium_r06.json
+c704c3c6b2459e836b5c2a8837b3d4328dfc8c38ca57b68a792fe3cee0a9a2ae  ./trees/d3_k30_medium_r07.json
+ed76a85753d4ec4f8ae07c6cc1a8c2633e79c3f69a0031bc00bb7d55510a4890  ./trees/d3_k30_medium_r08.json
+27f9a117f3a011098807f2b9b04921cb84c3cd9d0f66ec8a0e3329ea84cb42d1  ./trees/d3_k30_medium_r09.json
+9cacf1bf4eb8d9c83197ed017a21d0373603afd4588c13be4de37e91265f966a  ./trees/d3_k30_medium_r10.json
+5e0d433e7272c23dccf15964417ea856b71d99e0bcd549d83169a42a6fcde11c  ./trees/d3_k30_medium_r11.json
+f2837ec143fa7db54c03a94592f9d8ecea60a38322235729eedd2f5d3aa512c4  ./trees/d3_k30_medium_r12.json
+f2b8ff1d90334a57a2ff12acf403bb4f68374130a59fa12f82dd9d326dc4704b  ./trees/d3_k30_medium_r13.json
+f06a1b245f8af7b1c49f4de6af24604cf25977eff240103ebc04f9980f5a09ce  ./trees/d3_k30_medium_r14.json
+0690c780f4e1a138d5f59ab91b9e414ef3804a97ad67a39c5c4424160983e83f  ./trees/d3_k30_medium_r15.json
+b368284155671491c8bcce3b5ae418e5b1aceeb9de38da1c7ffb809c875ee7c5  ./trees/d3_k30_medium_r16.json
+0542886156db0ad16fefb6a5527f188b363133b7e10def786f7f2a561bc7957a  ./trees/d3_k30_medium_r17.json
+c1c96e50c792425b8bc678b87d62bedd97e7598acf4b3019b761ca2729cc66f5  ./trees/d3_k30_medium_r18.json
+c9e36324a47e9bc109b54adef17a2956386bf219bb99c6c141b992adc4651046  ./trees/d3_k30_medium_r19.json
+7c0591b120944076ee56bb4af99b034a9e3173f1274d833794fad18861fc9e19  ./trees/d3_k30_medium_r20.json
+f6964299549fd73b2f9b70238b15b4c046c211be0ff109bfe99c51dc990be508  ./trees/d3_k30_medium_r21.json
+2e897dafb4f9b2097fbb73977dd0f6d12638117c8731a6a494188b0581469d95  ./trees/d3_k30_medium_r22.json
+d8e82bf60ed7b490cc620a194ac0e4890a5f20871159f798f031a795e1506b71  ./trees/d3_k30_medium_r23.json
+ad567fc54b8853ee59793572af74c6a1ba71a970d1c64a7df5bf2e474672b81e  ./trees/d3_k30_medium_r24.json
+acda8afc529c04489dee0cde1a94d783fafc13429902bf5b1398176237372891  ./trees/d3_k30_medium_r25.json
+9e2ba91646cadce4d4a7b0251d4cbd26b819980c0d6be258e1fd749f1261a4ba  ./trees/d3_k30_medium_r26.json
+595e9503f1e13811857533c4b571c68173d15f2a52b4ee5c7ffbfb5ab2f8fa8e  ./trees/d3_k30_medium_r27.json
+509d2c12905902d2c7a33fcd15c10916c5ea7d09aa8a101c45918538c5a35f23  ./trees/d3_k30_medium_r28.json
+60558fc8cabb2bf88bc7a2f501810c7c9808fbcf07b7e8ed203195c0f962e8af  ./trees/d3_k30_medium_r29.json
+e72a18b3bff858a24bde3bfaa8f34ffb49a620d309fb3f61fa19890ef84f006b  ./trees/d3_k30_medium_r30.json
+f100e61742fabf7ee23e2c78ec6810d1217762073abccf034ee86ff9b70f87b3  ./trees/d3_k30_medium_r31.json
+6fd8c2d685312d69ca71143752a5fcc629e15d15885b8b94db60883bacc83555  ./trees/d3_k30_medium_r32.json
+adb685c8caa3e66f213604edfa0bde3bca28ba802c5004a6de8d57e0a94af412  ./trees/d3_k30_medium_r33.json
+29ed910bffb1547687219f1d91dae356073e5b4f7e14d9f44ddfeaae957ab9d5  ./trees/d3_k30_medium_r34.json
+fcd7408569db8bc819b1788d656f13e8609a1ed8f8627a7b22cdf769671ca3f9  ./trees/d3_k30_medium_r35.json
+c33f96c53b351fdd07da915645ce0993dd63b6525b0a731486e25a703f83ac53  ./trees/d3_k30_medium_r36.json
+b3154756aea776bf7bc3812dbdd9cf5dee36239b22c6778b3a6c0bbbbed7e6d9  ./trees/d3_k30_medium_r37.json
+34b19e457c7714a8ef5397855d488485d25ed0017d28ccb496f0fb7663e4a2f9  ./trees/d3_k30_medium_r38.json
+725a7526c845059b78398d7ca4a19a1063b9b949fff9267e47d189b992a1cc2a  ./trees/d3_k30_medium_r39.json
+af7f1db2fe7a8276f41c3635ef6da8b8b8b9badf426cb553b62137a510e4d45d  ./trees/d3_k30_slow_r00.json
+5acd8e107a51585e3b5ce55be2948edeaf84ae3735d02554d41fefb0f8001ad0  ./trees/d3_k30_slow_r01.json
+fa22ab852a2489a123731e62171c786ae9e2665c358cc29790bc23c8799f0d6e  ./trees/d3_k30_slow_r02.json
+56cebb1eb8fa13b02cc46309608892edd8c59f357e3cdbc4c266cc723c76d557  ./trees/d3_k30_slow_r03.json
+b1f3397efe4f1d92b272b44de4adf3bb8678154ed59a4d8dca1d16bccee8168b  ./trees/d3_k30_slow_r04.json
+e77799bea8a8042d0c7f49b3469b20002ed95490152f7235c79a62bf5c22c362  ./trees/d3_k30_slow_r05.json
+00f9db559357913719ea9ae377fb5e67555fca3f77a7b21562f6c91a545feb37  ./trees/d3_k30_slow_r06.json
+27b4a478db9b5ae76292f8b7d3ad60ff53b00e469099077be500f72dcb627220  ./trees/d3_k30_slow_r07.json
+725952722f6f56b68fb22d0b4029a3f86ec0084d2492ff4038458d2a22ac5e10  ./trees/d3_k30_slow_r08.json
+382a6685e434808c43af5dc37af69cd68d66dc65827a5cf6a6d101b129b01871  ./trees/d3_k30_slow_r09.json
+bf0646277e9719f36ff7be9193ff4536439dc59590d48df6e221cdcad1b0e476  ./trees/d3_k30_slow_r10.json
+ed7d4e763f202b574bdf1a4eae584be7c4e151374ec4528a238b19212404ef96  ./trees/d3_k30_slow_r11.json
+6bf6f3b1f7b2448cee0c60b3dd1f400af429fd429e64b34acb3f84685bd57784  ./trees/d3_k30_slow_r12.json
+ec6c9f16c8d5ec50bfdf244bde1b3daa06685601343cbf1eb85cc00f78b636fb  ./trees/d3_k30_slow_r13.json
+f4a160296a70363d3cf50337f83ddccde30732e77a9b6ca8994a9aff4d57a907  ./trees/d3_k30_slow_r14.json
+6d5ab1395ea03624e69e2d661f0962c8b646be0b3eaeaf999f01032a138cbfbb  ./trees/d3_k30_slow_r15.json
+62b956ab5d887fc4ad1f1c39871de92ad4d58ddb814dabd36bb451a856d93e05  ./trees/d3_k30_slow_r16.json
+ed5172d643ffd1f0ab5e0574d660208b8489e96b474f28c565d4541b5d8e162c  ./trees/d3_k30_slow_r17.json
+34584438ddd62d000d599572c454c115817124dfe4c797e6eb4d9f14b86fe495  ./trees/d3_k30_slow_r18.json
+78a0a6fb42fc5e0882bcb1e8d5594b196679af6e003c00e8f76cf91472020455  ./trees/d3_k30_slow_r19.json
+77ff52008e52ff939c20047b39ec0aa41090c0cf3f79c8092e6a386f43576383  ./trees/d3_k30_slow_r20.json
+2b3ed8878206ab1a752e1a93f3a264e799eb364219099a3f8d02bf7b7ad33fae  ./trees/d3_k30_slow_r21.json
+aed5b79142ccf0c2c364b52d7e3e68269c2ecefa99820d01092797b0a12b3657  ./trees/d3_k30_slow_r22.json
+b71d5e82642f0fc01829a082d46de660dd65bc275f4c5802bd5feb423188bda8  ./trees/d3_k30_slow_r23.json
+2595157820370c1f7962da9cebe3f29635669e789a12fdc1d2532b672c461157  ./trees/d3_k30_slow_r24.json
+e2ae4e1f4c3ad9cae3f43eac9c6256ded7ce38debfe76404d3d719165bd1391f  ./trees/d3_k30_slow_r25.json
+fac6422da937894335bf14b8f23be1acf6441f125b16629bd699178bf283ba6f  ./trees/d3_k30_slow_r26.json
+50c610a3a126e0c258ef112a0b60599a84ee3c74e2ac042d25ed2b3133732353  ./trees/d3_k30_slow_r27.json
+ccb25cfdac7c6db9ae1927ee3e0ec5730fa2b452f84c55bb473fa8deb6fd2c30  ./trees/d3_k30_slow_r28.json
+a576ec17c656cc34b2d273de82af45bfafa5f71d1511e646874fa13e547aa262  ./trees/d3_k30_slow_r29.json
+35b655143ede815e117fdbd10b867d8f5d5139edebebb3314f7f76c98cb08f94  ./trees/d3_k30_slow_r30.json
+5b2aef20febf206d185bed4f12cafb9a0bbf3bfe6c289d10bfb985c108a9a591  ./trees/d3_k30_slow_r31.json
+2b710fabe34e5af00f6a39119ea006fdc0f46ba861bb05d95e607dd89abf5c3c  ./trees/d3_k30_slow_r32.json
+316603f3ed2310e18f36fccd2a9707182d9f3e7287c05be297f37aadc53b8b3c  ./trees/d3_k30_slow_r33.json
+88176347363528276c2d68c4933569575ea286aedc6822ff6f0148e72a346d53  ./trees/d3_k30_slow_r34.json
+d32f672c8aa48c5c2ab05b5746368f15abb92928a7d95e5dff0b77d6cee9dc39  ./trees/d3_k30_slow_r35.json
+82b7d8dda22e84b56f5232e851af93d2303c58f39ed9a69c0dc07eca39381317  ./trees/d3_k30_slow_r36.json
+eee2372b71c4b211accec7d9e4798704af9ca4961528c948b2697cc7e9d7bb28  ./trees/d3_k30_slow_r37.json
+c7319ac613c3e8eb1af02b552e8b41ed4642ccefc03203d22802624b7bfb450d  ./trees/d3_k30_slow_r38.json
+8a8fc737329bcc795ec2b46343f206f6db3e2d45d90121668d37835cf4e77c2a  ./trees/d3_k30_slow_r39.json
+91dcf0a177f0be78041a197f1425b74d35786af90659f2d50790851b852a138d  ./trees/d3_k50_slow_r00.json
+8285e41161a4faf3d5f95284b6d5ce15ecc7874afb14415473a6573ec3e32ba2  ./trees/d3_k50_slow_r01.json
+8fec7de09ce83e5ea1de883bc6e4014b7f2b74144104259c36ab1aaf6aa9c675  ./trees/d3_k50_slow_r02.json
+d6049356a9633fafba10b91b0d3d2c76b2c2cf11c83e2e4492cc559f22f7897f  ./trees/d3_k50_slow_r03.json
+f2d5961eba8538cd75ec96214b2844941f9f95550836506aaf3db428b57918fc  ./trees/d3_k50_slow_r04.json
+b56bf13ec567c6046a91cf67e29301d76edee8792bbd66fd6bf29b98f0e7f026  ./trees/d3_k50_slow_r05.json
+40f5ce3d6d9e68368e50722e7f18ecbdc8796bb5ac893fb788350d959721ef50  ./trees/d3_k50_slow_r06.json
+864d7b54a80ba13507aba1383291f3d9d0f3893c82f29ac398fde19722ce4385  ./trees/d3_k50_slow_r07.json
+233b346e6c60441a991aa938fa6ec3b10aeabb96b52d1649f2ea96c276276c9b  ./trees/d3_k50_slow_r08.json
+1c1a7ce0ef1d33c411e7964c1160589bd8a1c1f0f6bcd8c39dcbb7638638a407  ./trees/d3_k50_slow_r09.json
+8f4f5278127ade62dcc56ef32e873189c3cffe8a581bb2e202b29979b01b1db0  ./trees/d3_k50_slow_r10.json
+b18c3c11365406cade7c8fce5f2323eea95cb2f6ed610d47403dd7b214a41cb4  ./trees/d3_k50_slow_r11.json
+c06a32f30a95cc08ef82a0e7faf6656a71b5ce453710b1008261629b0292767a  ./trees/d3_k50_slow_r12.json
+32a75aa186c374c23b355031f0ba50d335195c4bd3d4c356795446b06da68efb  ./trees/d3_k50_slow_r13.json
+e9e5c56d60723344c08ce9072f5fa6231250a88053b3878f2947daef519bb281  ./trees/d3_k50_slow_r14.json
+151cb9663c9ae3180004717b40c249f364c74e86562f985405e8d0b4746a191e  ./trees/d3_k50_slow_r15.json
+9bb747501fe8121301b4b82142a52243cca0912798568eea18474624ad345630  ./trees/d3_k50_slow_r16.json
+5a050877584b79fe61829e256a9d4f5d4f0ae7343c36f6c319f3638a86a0b7d0  ./trees/d3_k50_slow_r17.json
+bc467f6fa164b9546d3af872e2c91a2e939a4066087d6d449161651026165706  ./trees/d3_k50_slow_r18.json
+fc8ca31d1446af12d2ea32affa43c21a035264dbc137e2422ed6d6eb5a35e084  ./trees/d3_k50_slow_r19.json
+2f5e1333678cd370f11416727c5964a7adbe209a182e94a5215cc658a797d385  ./trees/d3_k50_slow_r20.json
+c9a0ecd227884f92990f90b97bd92c9efa421f8eb6d29295659334efca10987c  ./trees/d3_k50_slow_r21.json
+0f435fa2b79936af22c10d7754e27dddd43496085936bf587ca97269872d5d2c  ./trees/d3_k50_slow_r22.json
+616966f4335cb478b8850848e4cd8c10a717c3edd893adfbb4e484b98be6dd93  ./trees/d3_k50_slow_r23.json
+e3da6622612fa7b7f37e609971a796a2007dedfca8308803a369b55c45f22a89  ./trees/d3_k50_slow_r24.json
+686f8f7d75f06d1d900c1bdf896fdd3aa1ecd14f5965b57c0027c773aacb61fb  ./trees/d3_k50_slow_r25.json
+9aab18dff2024f434c587223b8028162f7b3c80edaaaa3fe2288e70ec6346f41  ./trees/d3_k50_slow_r26.json
+1a2dc519fa8bdf98d8af587d43248aca270a6c07b2be36e13bbc9395e802b837  ./trees/d3_k50_slow_r27.json
+3e55b26c0749b548b6d9ec0d6d64b1798620551c78d3da1cfebbaf937fb6a19c  ./trees/d3_k50_slow_r28.json
+5f160e910c4606fe3967fe9d5f00fdcc1760be9aa4a7a972e84fdbf1c5c62a9f  ./trees/d3_k50_slow_r29.json
+31b02588a8a097aedd38317bd48b82219f62a6437bf39a307f3452cf474e83cd  ./trees/d3_k50_slow_r30.json
+f92e18909a1389fae509d196fb0fd9fe6f6469db33c69c20a858defc198ef8ad  ./trees/d3_k50_slow_r31.json
+557358dce78a6d536a452ce2618d722b5426ff25829fc273e0a4f28416a081ee  ./trees/d3_k50_slow_r32.json
+ceca1a2a8ab4eca12ef2abffa698ef62a7d32aece600e71fa61f59c9cf3eec0c  ./trees/d3_k50_slow_r33.json
+c45bcb5aba1db13edf27ca240eb875e27efa309c1f2f6eff6864476aae6dcbe3  ./trees/d3_k50_slow_r34.json
+45aacdc7d07d6e3392d959b547e82596caa077c7de64a663192205c0ad26306a  ./trees/d3_k50_slow_r35.json
+2a61c2ffccc53da6c45ca8d6737836e635b2651e9f2584b4aca1396b20e577db  ./trees/d3_k50_slow_r36.json
+39e436f07b0701d86c5d61a5ce3064a73b6d0add4ba669cce785ff851707fa71  ./trees/d3_k50_slow_r37.json
+c2d2d407d3cd6ec1150c528ebae437258b0f5247d00f5f001f49e1158b8aeee2  ./trees/d3_k50_slow_r38.json
+eabb66615a77f7be72847a71e826e86ca060f3b6e6b38c8f81f4c31f0d7c4b35  ./trees/d3_k50_slow_r39.json
+6375ce153fa78db6899809d0e92e34edba21bbdb037daebc7d83f19c1c742ebf  ./trees/d4_k30_slow_r00.json
+1a36856cbf37d20ce3ee580d827ca07399cda7bfe67e0c4377e9bd0756290120  ./trees/d4_k30_slow_r01.json
+9e1f7b60986539922e9fa32ea8fee5bf5803475959f9757ba074af6e44b58384  ./trees/d4_k30_slow_r02.json
+3cf5b1c037e59f81166e460f73d72e0c57578f823557ee227d6576e511a03956  ./trees/d4_k30_slow_r03.json
+c589e26626e25fe2d142d3ae8ec45173dc9025153aac4e9f3e4d7005023d1a0b  ./trees/d4_k30_slow_r04.json
+ef259920c5e72c610bcddffa73385f8de52a538acdd2714734a200450b2b526f  ./trees/d4_k30_slow_r05.json
+0127470119773f4583040febfa73ca03b1a76afab9fb74f20f7bb1f18ebdad84  ./trees/d4_k30_slow_r06.json
+253e9ae1098ec2b5849d59c1a6b798770f3cb4fb712ca19aa45a6871a207104c  ./trees/d4_k30_slow_r07.json
+539dace0ca2344976f95bb9c275c66bae6f619f21cb0b0a15ce8209e13f822c3  ./trees/d4_k30_slow_r08.json
+617b7fbc8293f6b0446488b08b0a3c184871e13926fceddf7e68a2cb5227f526  ./trees/d4_k30_slow_r09.json
+d2bc4bfac3ae9afb75f84ea5667d86e3c2db0ceb7e8f70341113a6208743708b  ./trees/d4_k30_slow_r10.json
+23821693041a9260b23822f74223177ca7af14f465a7865d7b6059578630deaa  ./trees/d4_k30_slow_r11.json
+de639ca63a03a8e6b1424a2a4f98c7e84db3ac38aa9fb1b3fe5735a65a5e0365  ./trees/d4_k30_slow_r12.json
+445dff31a460f03f5551f9b2ccc4dea6e32ad8d5b1ad31ee722be9555d0971f9  ./trees/d4_k30_slow_r13.json
+c879ea4d44ec81c16405a9c7eb2aadaf50ca52332e8dfc7940eb5e30eacc57a9  ./trees/d4_k30_slow_r14.json
+30bbe09fd1b53174d4deaf1c7e83d045ee15cd9ee7a3d75eeed6d9a257e50360  ./trees/d4_k30_slow_r15.json
+af2cdfbb811d62a533e66c8b8b698378fc7591914cdd60e0f3b2d49705f976a3  ./trees/d4_k30_slow_r16.json
+e9cc626ec416742b43723ee0785c703a68304710504831b4dd145b18a873bae7  ./trees/d4_k30_slow_r17.json
+2ac647420a41bc459a067d4a3f96bd9a121d5d3fd76bafce928983468546ab81  ./trees/d4_k30_slow_r18.json
+784ba84905b47700ab46cea833bc135869dec6b53075ec5e6a7dac68b91c3cdf  ./trees/d4_k30_slow_r19.json
+209c022437618448d8f0698cdf8592d44a67374602d99b2e230c3ab682008109  ./trees/d4_k30_slow_r20.json
+c12aaaeca03e142aaaca07efa7f239b4ed4a24ea3e9ae85d5da36ac44f3e5ca7  ./trees/d4_k30_slow_r21.json
+ea24ad91f0bf38b095f539757d1471c753a42e8d1925ec220f7a804d4286c5e6  ./trees/d4_k30_slow_r22.json
+8c920e3f6ca6e93f5a39126ff03644c7b17ae17494e32dccc2ec634710b1c93f  ./trees/d4_k30_slow_r23.json
+1b21e867a71391f3af3306dfac2ec2f192329a3e83cf092df2e1992cf6bb3d19  ./trees/d4_k30_slow_r24.json
+5e9f1f2b262e895b8126b9402693170a49818f3cd5d2926f0b8de7cfdf29c76a  ./trees/d4_k30_slow_r25.json
+784aa35639d8105e2d94ac794c72a3c4aa18b1c8632706c87c458696484ce44e  ./trees/d4_k30_slow_r26.json
+11739f4079021f5bbfc338e289464d930b8573ee7ffac5b48979215980abc209  ./trees/d4_k30_slow_r27.json
+c86204a57fcffc1d1bc54f757dd8e910e137dcd935c1423d2ae233aa82777776  ./trees/d4_k30_slow_r28.json
+a349f981f8ba5e01d78e55e564fb49e793ea117e7299675948aa06ca0667746b  ./trees/d4_k30_slow_r29.json
+35a7b9a259e75d3e1bfe1d010b1cd52838c21ed14e200bd74743da5221302eb8  ./trees/d4_k30_slow_r30.json
+6f16cb37bd6bd8f80c4882ccf702c2580df5fa4dd77f812cea73520ab0f97118  ./trees/d4_k30_slow_r31.json
+b299b7199ae41d0068104ce6ee4743bfc3cac16b3179d84066da4653ba9b191c  ./trees/d4_k30_slow_r32.json
+feb763f2ffbb30a8eb552571dc36627c757f703c76ab1a1efb49ff1f25bd6a12  ./trees/d4_k30_slow_r33.json
+59661530a71e0f1081be2d426c0c5a2bd96d8b0dca09d073c672ed452aedc477  ./trees/d4_k30_slow_r34.json
+2cc1f53e37b3c982daa31f5aefb800109675b0cc4f1d64c1449c100259906581  ./trees/d4_k30_slow_r35.json
+5f445802106cd18c9acbadec2d64cc44d271b09d42dffa2c6444fbde786b4b08  ./trees/d4_k30_slow_r36.json
+4b1b13c008b759b5aab8e08fd7fa5cebdbc21e94ba5c9ab95c0aed65418658e2  ./trees/d4_k30_slow_r37.json
+f4bdda2f861ed36e86298fc7e05e1bb567d0a1cb23676d893e66a12bfd6a5acd  ./trees/d4_k30_slow_r38.json
+dcd1111b71aa6a7a7bfd4f8404678d362e00c5bac2c1f88e9121f613bc709c4e  ./trees/d4_k30_slow_r39.json
+e532494ea58bdbf1deb255c3c32a2fc8ea78e3e978ed09a17f4015706fd51d5a  ./trees/d4_k50_slow_r00.json
+f659ade31e8283f004327c537e5cefd7b02a43f6327e40db8c7a0977af577ab8  ./trees/d4_k50_slow_r01.json
+fb04818ea6b5af7c4bb8ae7fdccc9a5cb9a18ee4c9a445e0cef63bbb3fd12fc4  ./trees/d4_k50_slow_r02.json
+03b1a5fc9d496e0239bc9e23ada3bb003741ad092bdcf143c6c7d9a5edaf9d39  ./trees/d4_k50_slow_r03.json
+fe6b9f240fd2859dce46ca6adfad532f4320fa01a87ca014984b700a63f1c9ed  ./trees/d4_k50_slow_r04.json
+5178c7b1959b9b73a64d5394779082d4df037a09712dec6017d74f3e869019e2  ./trees/d4_k50_slow_r05.json
+7d8fba528bc3354273da33c67417f7285f895d285ae03fd7880040936e42105e  ./trees/d4_k50_slow_r06.json
+5e7c3df6bcfc6d0aac63df141bdc0d8df9df2e2c52ffd85c78904884f6364dc0  ./trees/d4_k50_slow_r07.json
+41442ee54b3eb32a6328afa1c3c6a186c03f59240b7591bd65f2316fe0c4035f  ./trees/d4_k50_slow_r08.json
+dfc57811e6f34a6c81d4852b296d04339cf3779be932a0a49a97dd6ebe1455c2  ./trees/d4_k50_slow_r09.json
+5e32c9aff02697be190da1f9f514735b077f986769829b75e24e3c4917e8b9b9  ./trees/d4_k50_slow_r10.json
+1f0862b81a9b695603c1e060e6c8e7ba801c6cc55bbeeabbc5cec923dfbbf0b2  ./trees/d4_k50_slow_r11.json
+af794e9b7fcb2f8fde87d3c2a718a9bf7327369df3f0c84c45b7f61d607ea7ae  ./trees/d4_k50_slow_r12.json
+3d4fa63de92fbb1b3d25535866cd15fe27afa74254a30bec76c9693ba2e334e2  ./trees/d4_k50_slow_r13.json
+48dfebd2437d5a6512d69d53f4ac15e53174e192cf0fd1e325a07a39d1abd466  ./trees/d4_k50_slow_r14.json
+5c8dc19390e329cc8b1845796dfae93578a7b0e5ffb8fd340d24ebac62dff324  ./trees/d4_k50_slow_r15.json
+eb3bdc34c3d6d25dfae5df568a6afe632804cfce8fe020e1d08915fe5a31800e  ./trees/d4_k50_slow_r16.json
+39112607b69b5cd8ec92d91949c8288ca71375a4a1bc1f78bc2e7eb3bc1dc8c6  ./trees/d4_k50_slow_r17.json
+c100f84fdc39937a5fc3c0f35d84ea10c2e10573a6568dfb8611c6547819eff6  ./trees/d4_k50_slow_r18.json
+ca4d63fa878be6dc0e2bcd924e6265f2e2ac4995bcd33b5d7f28c1f8b32047e8  ./trees/d4_k50_slow_r19.json
+f1a1913f160212d1c79cace752078af0b2a6a7e351f61d7242db6277c850018b  ./trees/d4_k50_slow_r20.json
+c49c20611a08b8e3fd47bced1b85806cbb2cf775ba0a03f74a94adcd0033c979  ./trees/d4_k50_slow_r21.json
+82e350396be257be9f53c013fe0fb816d0b14fdf35745e951901c86d0ed911fe  ./trees/d4_k50_slow_r22.json
+469380c4fcd3b1a6aa1c3297c3791459a9080c8bcea87d1c09d6dfe0b20e580b  ./trees/d4_k50_slow_r23.json
+02f6bbbf1809447d1d23e66efaf0fc03484eb9757bd18a4b1b1385cb081d2f25  ./trees/d4_k50_slow_r24.json
+3410dbc06ef9252ce39370e450d9fab7c02e63d8257df1d58be857618b941626  ./trees/d4_k50_slow_r25.json
+5e715ffb575347ec3c77da1f49b7d1a4771d3be554908437ec298ab3fe3a70f5  ./trees/d4_k50_slow_r26.json
+25189de8d08f16f5578be43acee24fe5b736c87b6095006d8bc721956edb7ae3  ./trees/d4_k50_slow_r27.json
+af872b2b42b752fb1bc6346bbedecaef8d6e0b930102f00ac630235a9fd35300  ./trees/d4_k50_slow_r28.json
+38f41c78251778bfc8289df85fe5fece56a2c95b83fd5f2427d77206ebea257c  ./trees/d4_k50_slow_r29.json
+a332f954650fd289bd40df2acfbc0e8ae798ba61d2618a929fe82e304f9db4c5  ./trees/d4_k50_slow_r30.json
+86d8462d17b3124d8d13269046196e76c3737b4816c131869f39fa8a4d54c1ca  ./trees/d4_k50_slow_r31.json
+7d7e219468d9ef0a5a7973f0e18feeaceadd889b3af9b658a4eb287e79d57e86  ./trees/d4_k50_slow_r32.json
+5d832e8718592a5a8e285b871013b9ff691b0931a471aebe61dc3cd656e3337f  ./trees/d4_k50_slow_r33.json
+4936e064f128c2d4785bdc93f9478941683b0b363c09bfd9ed77718e3c5eaf74  ./trees/d4_k50_slow_r34.json
+903e27f66f82e3ccb6ef30264ca0c6ad14a05be969f254669ec6c136f04aaa97  ./trees/d4_k50_slow_r35.json
+31c5c2037e0fb51114c3de31a69ae9704ab4639a707bbb14cd46cac21bb2d84c  ./trees/d4_k50_slow_r36.json
+eff18f89cb8d5a80ac2f1bdcd8d03b520a082dab7fcf9814e567fc2aa41c6abe  ./trees/d4_k50_slow_r37.json
+72a61367bace7f3e5ae508d7c519c1a5cdc1f7a221bb47b6ec7b012a3452bc53  ./trees/d4_k50_slow_r38.json
+9783d756677d838dfc9f486b7466a6ba83204728a3c61aed90826d5270edcd99  ./trees/d4_k50_slow_r39.json
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./tt/__init__.py
+3e11b3e350181b0a64b30b81942c7afe2969f0dc29b420b1ac5dfed31cadcb33  ./tt/esco_tt.py
+d0f86311028f3d7e3d1c8f6667eeecd09ed6b8c4ffa586624a22653b27ddf7a5  ./tt/ttcore.py
+```

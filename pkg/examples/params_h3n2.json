@@ -1,0 +1,9 @@
+{
+  "demes": ["Hong_Kong", "New_York", "New_Zealand"],
+  "Ne": {"Hong_Kong": 0.875816, "New_York": 1096.63, "New_Zealand": 0.36818},
+  "M": {
+    "Hong_Kong_to_New_York": 0.614539, "Hong_Kong_to_New_Zealand": 6.14421e-06,
+    "New_York_to_Hong_Kong": 3.22049, "New_York_to_New_Zealand": 6.14421e-06,
+    "New_Zealand_to_Hong_Kong": 6.14421e-06, "New_Zealand_to_New_York": 1.09947
+  }
+}

@@ -1,0 +1,14 @@
+(a) d=1 Kingman closed form: max |dlogL| = 1.776e-15
+(b) k=2 analytic / direct expm: max |dlogL| = 5.329e-15
+(d) expm_multiply vs uniformization on 130 test trees: max |dlogL| = 2.061e-13
+(c) Monte Carlo over migration histories (40000 paths each):
+    tree                  L_dense          L_MC            SE          z
+    d2_k04_slow_r0       6.280781e-03  6.455442e-03  8.24e-05  +2.12
+    d2_k04_medium_r1     1.507998e-03  1.524049e-03  2.60e-05  +0.62
+    d2_k04_fast_r2       6.314529e-03  6.239118e-03  8.88e-05  -0.85
+    d3_k04_medium_r0     1.147569e-03  1.181597e-03  4.29e-05  +0.79
+    d3_k04_fast_r1       6.204441e-05  6.508309e-05  1.99e-06  +1.53
+    d2_k06_medium_r0     4.751551e-05  4.831324e-05  1.63e-06  +0.49
+    d4_k04_medium_r2     1.340666e-04  1.330787e-04  7.95e-06  -0.12
+    d3_k06_slow_r1       9.230135e-07  6.502268e-07  1.54e-07  -1.77
+total 456.2s

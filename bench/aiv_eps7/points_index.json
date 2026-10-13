@@ -1,0 +1,47 @@
+{
+ "masco_asym_hubans": {
+  "tree": "masco",
+  "src": "masco_refine_asym_hubans_fit.json",
+  "tt_1e-6": -281.50716929950016
+ },
+ "masco_sym_hub": {
+  "tree": "masco",
+  "src": "masco_refine_sym_hubcont_fit.json",
+  "tt_1e-6": -296.30429094697575
+ },
+ "masco_sym_regular": {
+  "tree": "masco",
+  "src": "masco_refine_sym_regular_fit.json",
+  "tt_1e-6": -301.92965255553224
+ },
+ "sisco_asym_gal": {
+  "tree": "sisco",
+  "src": "sisco_refine_asym_L264705_fit.json",
+  "tt_1e-6": -266.0599421241843
+ },
+ "sisco_asym_cha": {
+  "tree": "sisco",
+  "src": "sisco_refine_asym_L264670cont.json (iter 1)",
+  "tt_1e-6": -270.6294982283276
+ },
+ "sisco_sym_regular": {
+  "tree": "sisco",
+  "src": "sisco_refine_sym_L274067cont_fit.json",
+  "tt_1e-6": -281.0473165112689
+ },
+ "lisco_asym_gal": {
+  "tree": "lisco",
+  "src": "lisco_refine_asym_L257131_fit.json",
+  "tt_1e-6": -258.57187797613255
+ },
+ "lisco_asym_cha": {
+  "tree": "lisco",
+  "src": "lisco_refine_asym_L256886cont_fit.json",
+  "tt_1e-6": -262.3652467165244
+ },
+ "lisco_sym_regular": {
+  "tree": "lisco",
+  "src": "lisco_refine_sym_L267082cont.json (iter 1)",
+  "tt_1e-6": -274.0766530662635
+ }
+}

@@ -1,0 +1,18 @@
+{
+  "title": "TT-ESCO: exact structured-coalescent likelihoods with tensor trains (code, benchmarks and data)",
+  "upload_type": "software",
+  "description": "Code, benchmark results and input data for 'Exact structured-coalescent likelihoods beyond the full state space with tensor trains' (Hael Song). Tensor-train (tt/) and full-vector (dense/) implementations of the exact structured-coalescent likelihood on a fixed time tree, a converged MASCOT implementation (approx/), the escott package (pkg/), simulators, all benchmark scripts and result tables (bench/), and the figure scripts (paper/figures/).",
+  "creators": [
+    {
+      "name": "Song, Hael",
+      "affiliation": "Korea University, Seoul, Republic of Korea",
+      "orcid": "0000-0000-0000-0000"
+    }
+  ],
+  "keywords": ["structured coalescent", "phylogeography", "tensor train", "matrix product state", "MASCOT", "exact likelihood", "phylodynamics"],
+  "license": "MIT",
+  "access_right": "open",
+  "version": "1.0.0",
+  "language": "eng",
+  "notes": "Third-party data keep their own licences (CC BY 4.0, CC BY 3.0, GPL-3.0); see LICENSE and data/README.md. Replace the ORCID placeholder before the first release."
+}

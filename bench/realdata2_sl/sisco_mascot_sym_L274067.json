@@ -1,0 +1,45 @@
+{
+ "engine": "mascot",
+ "model": "sym",
+ "loglik": -274.0671826784002,
+ "theta": [
+  -1.1278563673559567,
+  -1.1589884606193797,
+  -1.6907097304254415,
+  1.0160515860051889,
+  -0.5536321007527932,
+  0.8250735916545084
+ ],
+ "params": {
+  "m01": 0.32372646378134334,
+  "m02": 0.3138034449353377,
+  "m12": 0.18438861133456708,
+  "Ne0": 2.7622666315408604,
+  "Ne1": 0.5748580715425287,
+  "Ne2": 2.2820486988893935
+ },
+ "root_probs": [
+  0.17533048314309843,
+  0.7508625885422032,
+  0.07380692831469834
+ ],
+ "grad_norm": 8.60989308226082e-05,
+ "nev": 210,
+ "msg": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+ "fixed": null,
+ "n_starts": 12,
+ "starts": [
+  "multistart",
+  "sisco_mascot_sym_x0.json",
+  "multistart",
+  "multistart",
+  "multistart",
+  "multistart",
+  "multistart",
+  "multistart",
+  "multistart",
+  "multistart",
+  "multistart",
+  "sisco_mascot_sym_seed_masco_regular.json"
+ ]
+}

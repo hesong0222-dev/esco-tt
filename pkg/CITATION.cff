@@ -1,0 +1,33 @@
+# Placeholder: fill in the author list, DOI and repository URL when the manuscript and the repository are public.
+cff-version: 1.2.0
+message: "If you use escott, please cite the article below and, for the MASCOT comparison, Mueller et al. (2018)."
+title: "escott: exact structured-coalescent likelihood of a fixed time tree via tensor trains"
+version: 0.2.0
+date-released: 2026-10-13
+license: MIT
+authors:
+  - name: "TODO: author name"
+repository-code: "TODO: repository URL"
+preferred-citation:
+  type: article
+  title: "TODO: article title"
+  authors:
+    - name: "TODO: author name"
+  journal: "Molecular Biology and Evolution"
+  year: 2026
+  notes: "Manuscript in preparation (Methods)."
+references:
+  - type: article
+    title: "MASCOT: parameter and state inference under the marginal structured coalescent approximation"
+    authors:
+      - family-names: "Müller"
+        given-names: "Nicola F."
+      - family-names: "Rasmussen"
+        given-names: "David A."
+      - family-names: "Stadler"
+        given-names: "Tanja"
+    journal: "Bioinformatics"
+    volume: 34
+    issue: 22
+    start: 3843
+    year: 2018

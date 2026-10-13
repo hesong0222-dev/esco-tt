@@ -1,0 +1,13 @@
+d4_k14_medium_r1.json,0.0,np.float64(-41.0952276228972),0.5
+d4_k16_fast_r1.json,0.0,np.float64(-43.62870202225979),1.2
+d4_k16_slow_r1.json,0.0,np.float64(-50.572744008485365),0.6
+d4_k18_fast_r1.json,0.0,np.float64(-43.22409799595431),1.3
+d4_k18_fast_r2.json,0.0,np.float64(-43.48109706869815),1.6
+d4_k18_medium_r0.json,0.0,np.float64(-51.72426645563581),0.6
+d4_k18_medium_r2.json,0.0,np.float64(-46.18075614800074),0.6
+d4_k20_medium_r2.json,0.0,np.float64(-54.21388804806514),0.5
+d4_k20_slow_r1.json,0.0,np.float64(-52.986408994175825),0.7
+d4_k18_medium_r1.json,0.0,np.float64(-52.6692240456619),0.4
+d4_k18_slow_r1.json,0.0,np.float64(-53.124669108049375),0.6
+d4_k50_medium_r0.json,0.0,np.float64(-122.94499453103576),0.7
+d4_k60_medium_r0.json,0.0,np.float64(-131.76024594447227),1.4

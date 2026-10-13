@@ -1,0 +1,1947 @@
+{
+"demes": 7,
+"deme_names": [
+"alaska",
+"northwest",
+"northeast",
+"southeast",
+"eastcoast",
+"northmideast",
+"center"
+],
+"source_tree": "TREE1",
+"tip_date_err": 6.075181246956163e-09,
+"M": [
+[
+0,
+1,
+1,
+1,
+1,
+1,
+1
+],
+[
+1,
+0,
+1,
+1,
+1,
+1,
+1
+],
+[
+1,
+1,
+0,
+1,
+1,
+1,
+1
+],
+[
+1,
+1,
+1,
+0,
+1,
+1,
+1
+],
+[
+1,
+1,
+1,
+1,
+0,
+1,
+1
+],
+[
+1,
+1,
+1,
+1,
+1,
+0,
+1
+],
+[
+1,
+1,
+1,
+1,
+1,
+1,
+0
+]
+],
+"Ne": [
+1,
+1,
+1,
+1,
+1,
+1,
+1
+],
+"events": [
+{
+"t": 0.0,
+"type": "sample",
+"id": 16,
+"deme": 3
+},
+{
+"t": 0.024657534330907893,
+"type": "sample",
+"id": 17,
+"deme": 3
+},
+{
+"t": 0.16433449589500349,
+"type": "coal",
+"a": 16,
+"b": 17,
+"new": 133
+},
+{
+"t": 0.8520547934054878,
+"type": "sample",
+"id": 58,
+"deme": 5
+},
+{
+"t": 1.213698633081755,
+"type": "sample",
+"id": 21,
+"deme": 6
+},
+{
+"t": 1.213698633081755,
+"type": "sample",
+"id": 22,
+"deme": 6
+},
+{
+"t": 1.34079860335053,
+"type": "coal",
+"a": 21,
+"b": 22,
+"new": 134
+},
+{
+"t": 1.4301369895512117,
+"type": "sample",
+"id": 29,
+"deme": 6
+},
+{
+"t": 1.43287671456625,
+"type": "sample",
+"id": 24,
+"deme": 6
+},
+{
+"t": 1.432876714609133,
+"type": "sample",
+"id": 23,
+"deme": 6
+},
+{
+"t": 1.4356164404383946,
+"type": "sample",
+"id": 25,
+"deme": 6
+},
+{
+"t": 1.4520547975998426,
+"type": "sample",
+"id": 20,
+"deme": 6
+},
+{
+"t": 1.4794520572730256,
+"type": "sample",
+"id": 19,
+"deme": 6
+},
+{
+"t": 1.5260273994230058,
+"type": "sample",
+"id": 26,
+"deme": 6
+},
+{
+"t": 1.52602739967808,
+"type": "sample",
+"id": 18,
+"deme": 6
+},
+{
+"t": 1.5260274006005883,
+"type": "sample",
+"id": 28,
+"deme": 6
+},
+{
+"t": 1.5534246598431647,
+"type": "sample",
+"id": 30,
+"deme": 5
+},
+{
+"t": 1.5671232902614847,
+"type": "sample",
+"id": 14,
+"deme": 5
+},
+{
+"t": 1.5835616455557116,
+"type": "sample",
+"id": 51,
+"deme": 5
+},
+{
+"t": 1.5917808252402015,
+"type": "sample",
+"id": 15,
+"deme": 5
+},
+{
+"t": 1.597260274028466,
+"type": "sample",
+"id": 55,
+"deme": 6
+},
+{
+"t": 1.613698629771383,
+"type": "sample",
+"id": 57,
+"deme": 5
+},
+{
+"t": 1.6142904524904385,
+"type": "coal",
+"a": 23,
+"b": 24,
+"new": 135
+},
+{
+"t": 1.6438356160721295,
+"type": "sample",
+"id": 56,
+"deme": 5
+},
+{
+"t": 1.6438356194611004,
+"type": "sample",
+"id": 27,
+"deme": 5
+},
+{
+"t": 1.7012338684233193,
+"type": "coal",
+"a": 56,
+"b": 57,
+"new": 136
+},
+{
+"t": 1.708146238557127,
+"type": "coal",
+"a": 135,
+"b": 25,
+"new": 137
+},
+{
+"t": 1.782441353538232,
+"type": "coal",
+"a": 137,
+"b": 26,
+"new": 138
+},
+{
+"t": 1.7958779323292582,
+"type": "coal",
+"a": 19,
+"b": 20,
+"new": 139
+},
+{
+"t": 1.8137048986894566,
+"type": "coal",
+"a": 28,
+"b": 29,
+"new": 140
+},
+{
+"t": 1.8657534262608007,
+"type": "sample",
+"id": 43,
+"deme": 0
+},
+{
+"t": 1.8684931534284566,
+"type": "sample",
+"id": 33,
+"deme": 2
+},
+{
+"t": 1.871232879505687,
+"type": "sample",
+"id": 32,
+"deme": 2
+},
+{
+"t": 1.8735674272188518,
+"type": "coal",
+"a": 18,
+"b": 139,
+"new": 141
+},
+{
+"t": 1.8821917852712176,
+"type": "sample",
+"id": 53,
+"deme": 3
+},
+{
+"t": 1.895890412782407,
+"type": "sample",
+"id": 38,
+"deme": 0
+},
+{
+"t": 1.9287671252556748,
+"type": "sample",
+"id": 36,
+"deme": 0
+},
+{
+"t": 1.9399407695180564,
+"type": "coal",
+"a": 32,
+"b": 33,
+"new": 142
+},
+{
+"t": 1.944650811335089,
+"type": "coal",
+"a": 141,
+"b": 134,
+"new": 143
+},
+{
+"t": 2.0000000016639223,
+"type": "sample",
+"id": 52,
+"deme": 0
+},
+{
+"t": 2.019178083571136,
+"type": "sample",
+"id": 45,
+"deme": 0
+},
+{
+"t": 2.019178083661327,
+"type": "sample",
+"id": 44,
+"deme": 0
+},
+{
+"t": 2.019178083696046,
+"type": "sample",
+"id": 50,
+"deme": 0
+},
+{
+"t": 2.019178083743217,
+"type": "sample",
+"id": 46,
+"deme": 0
+},
+{
+"t": 2.0191780838243005,
+"type": "sample",
+"id": 47,
+"deme": 0
+},
+{
+"t": 2.019178083975431,
+"type": "sample",
+"id": 41,
+"deme": 0
+},
+{
+"t": 2.0191780839934115,
+"type": "sample",
+"id": 40,
+"deme": 0
+},
+{
+"t": 2.0191780840033307,
+"type": "sample",
+"id": 42,
+"deme": 0
+},
+{
+"t": 2.019178084059817,
+"type": "sample",
+"id": 37,
+"deme": 0
+},
+{
+"t": 2.0191780840923954,
+"type": "sample",
+"id": 48,
+"deme": 0
+},
+{
+"t": 2.0191780841019398,
+"type": "sample",
+"id": 49,
+"deme": 0
+},
+{
+"t": 2.0191780841262403,
+"type": "sample",
+"id": 39,
+"deme": 0
+},
+{
+"t": 2.0309928658216805,
+"type": "coal",
+"a": 14,
+"b": 15,
+"new": 144
+},
+{
+"t": 2.0512482962428678,
+"type": "coal",
+"a": 136,
+"b": 58,
+"new": 145
+},
+{
+"t": 2.0753494155163192,
+"type": "coal",
+"a": 144,
+"b": 133,
+"new": 146
+},
+{
+"t": 2.0754278097211483,
+"type": "coal",
+"a": 37,
+"b": 38,
+"new": 147
+},
+{
+"t": 2.093273694603104,
+"type": "coal",
+"a": 138,
+"b": 27,
+"new": 148
+},
+{
+"t": 2.0991948729032117,
+"type": "coal",
+"a": 147,
+"b": 39,
+"new": 149
+},
+{
+"t": 2.102767551729505,
+"type": "coal",
+"a": 47,
+"b": 48,
+"new": 150
+},
+{
+"t": 2.1137106698721126,
+"type": "coal",
+"a": 40,
+"b": 41,
+"new": 151
+},
+{
+"t": 2.1306656773094232,
+"type": "coal",
+"a": 151,
+"b": 42,
+"new": 152
+},
+{
+"t": 2.135408863608271,
+"type": "coal",
+"a": 43,
+"b": 44,
+"new": 153
+},
+{
+"t": 2.140426805505184,
+"type": "coal",
+"a": 150,
+"b": 49,
+"new": 154
+},
+{
+"t": 2.147848748854992,
+"type": "coal",
+"a": 146,
+"b": 143,
+"new": 155
+},
+{
+"t": 2.1722487568149145,
+"type": "coal",
+"a": 149,
+"b": 152,
+"new": 156
+},
+{
+"t": 2.2031204717429933,
+"type": "coal",
+"a": 45,
+"b": 46,
+"new": 157
+},
+{
+"t": 2.2254152685785886,
+"type": "coal",
+"a": 156,
+"b": 153,
+"new": 158
+},
+{
+"t": 2.226148370969602,
+"type": "coal",
+"a": 157,
+"b": 154,
+"new": 159
+},
+{
+"t": 2.320047173776681,
+"type": "coal",
+"a": 158,
+"b": 159,
+"new": 160
+},
+{
+"t": 2.3671322917362847,
+"type": "coal",
+"a": 155,
+"b": 148,
+"new": 161
+},
+{
+"t": 2.371238194029214,
+"type": "coal",
+"a": 50,
+"b": 51,
+"new": 162
+},
+{
+"t": 2.4293648729081436,
+"type": "coal",
+"a": 36,
+"b": 160,
+"new": 163
+},
+{
+"t": 2.539726027990218,
+"type": "sample",
+"id": 54,
+"deme": 6
+},
+{
+"t": 2.5600356096377954,
+"type": "coal",
+"a": 161,
+"b": 140,
+"new": 164
+},
+{
+"t": 2.563028243562398,
+"type": "coal",
+"a": 163,
+"b": 162,
+"new": 165
+},
+{
+"t": 2.7972602764818344,
+"type": "sample",
+"id": 31,
+"deme": 1
+},
+{
+"t": 2.964225206221421,
+"type": "coal",
+"a": 165,
+"b": 52,
+"new": 166
+},
+{
+"t": 3.135367886880953,
+"type": "coal",
+"a": 166,
+"b": 53,
+"new": 167
+},
+{
+"t": 3.139079362874819,
+"type": "coal",
+"a": 164,
+"b": 30,
+"new": 168
+},
+{
+"t": 3.1397260334651786,
+"type": "sample",
+"id": 76,
+"deme": 2
+},
+{
+"t": 3.1990536320808367,
+"type": "coal",
+"a": 54,
+"b": 55,
+"new": 169
+},
+{
+"t": 3.282929754544069,
+"type": "coal",
+"a": 31,
+"b": 142,
+"new": 170
+},
+{
+"t": 3.3231946478238257,
+"type": "coal",
+"a": 169,
+"b": 145,
+"new": 171
+},
+{
+"t": 3.3753424716010674,
+"type": "sample",
+"id": 75,
+"deme": 2
+},
+{
+"t": 3.405671499974222,
+"type": "coal",
+"a": 168,
+"b": 170,
+"new": 172
+},
+{
+"t": 3.424657534795939,
+"type": "sample",
+"id": 61,
+"deme": 3
+},
+{
+"t": 3.432061463324363,
+"type": "coal",
+"a": 75,
+"b": 76,
+"new": 173
+},
+{
+"t": 3.4328767147674952,
+"type": "sample",
+"id": 35,
+"deme": 6
+},
+{
+"t": 3.449315070810737,
+"type": "sample",
+"id": 34,
+"deme": 6
+},
+{
+"t": 3.523287671720018,
+"type": "sample",
+"id": 60,
+"deme": 3
+},
+{
+"t": 3.599200732692708,
+"type": "coal",
+"a": 172,
+"b": 34,
+"new": 174
+},
+{
+"t": 3.6055612045969436,
+"type": "coal",
+"a": 60,
+"b": 61,
+"new": 175
+},
+{
+"t": 3.6836059554340608,
+"type": "coal",
+"a": 174,
+"b": 35,
+"new": 176
+},
+{
+"t": 3.871232878712201,
+"type": "sample",
+"id": 59,
+"deme": 0
+},
+{
+"t": 4.019050564827278,
+"type": "coal",
+"a": 176,
+"b": 167,
+"new": 177
+},
+{
+"t": 4.329150249529318,
+"type": "coal",
+"a": 177,
+"b": 171,
+"new": 178
+},
+{
+"t": 4.400000004061552,
+"type": "sample",
+"id": 10,
+"deme": 3
+},
+{
+"t": 4.410958907940892,
+"type": "sample",
+"id": 11,
+"deme": 3
+},
+{
+"t": 4.4958904137720435,
+"type": "sample",
+"id": 13,
+"deme": 3
+},
+{
+"t": 4.526027400589116,
+"type": "sample",
+"id": 63,
+"deme": 3
+},
+{
+"t": 4.553424660771771,
+"type": "sample",
+"id": 62,
+"deme": 3
+},
+{
+"t": 4.761643840159886,
+"type": "sample",
+"id": 67,
+"deme": 2
+},
+{
+"t": 4.761643840177085,
+"type": "sample",
+"id": 66,
+"deme": 2
+},
+{
+"t": 4.835616443408927,
+"type": "sample",
+"id": 69,
+"deme": 2
+},
+{
+"t": 4.849315072349999,
+"type": "sample",
+"id": 68,
+"deme": 2
+},
+{
+"t": 4.862957768373073,
+"type": "coal",
+"a": 66,
+"b": 67,
+"new": 179
+},
+{
+"t": 4.884585327099746,
+"type": "coal",
+"a": 10,
+"b": 11,
+"new": 180
+},
+{
+"t": 5.019178086595475,
+"type": "sample",
+"id": 65,
+"deme": 2
+},
+{
+"t": 5.019178087023139,
+"type": "sample",
+"id": 9,
+"deme": 1
+},
+{
+"t": 5.0191780871552485,
+"type": "sample",
+"id": 12,
+"deme": 1
+},
+{
+"t": 5.084931510202158,
+"type": "sample",
+"id": 74,
+"deme": 4
+},
+{
+"t": 5.166929552320774,
+"type": "coal",
+"a": 65,
+"b": 179,
+"new": 181
+},
+{
+"t": 5.299158617478783,
+"type": "coal",
+"a": 178,
+"b": 59,
+"new": 182
+},
+{
+"t": 5.330642349326153,
+"type": "coal",
+"a": 181,
+"b": 68,
+"new": 183
+},
+{
+"t": 5.380821921925705,
+"type": "sample",
+"id": 1,
+"deme": 3
+},
+{
+"t": 5.400000003368655,
+"type": "sample",
+"id": 70,
+"deme": 3
+},
+{
+"t": 5.400000003368655,
+"type": "sample",
+"id": 71,
+"deme": 3
+},
+{
+"t": 5.400000004081361,
+"type": "sample",
+"id": 7,
+"deme": 3
+},
+{
+"t": 5.400000004081361,
+"type": "sample",
+"id": 8,
+"deme": 3
+},
+{
+"t": 5.408219181853169,
+"type": "sample",
+"id": 72,
+"deme": 3
+},
+{
+"t": 5.408219181860613,
+"type": "sample",
+"id": 73,
+"deme": 3
+},
+{
+"t": 5.408219182031092,
+"type": "sample",
+"id": 6,
+"deme": 3
+},
+{
+"t": 5.408219182100691,
+"type": "sample",
+"id": 3,
+"deme": 3
+},
+{
+"t": 5.408219182100691,
+"type": "sample",
+"id": 4,
+"deme": 3
+},
+{
+"t": 5.419178084956816,
+"type": "sample",
+"id": 82,
+"deme": 3
+},
+{
+"t": 5.439441789910644,
+"type": "coal",
+"a": 3,
+"b": 4,
+"new": 184
+},
+{
+"t": 5.4432411770750555,
+"type": "coal",
+"a": 7,
+"b": 8,
+"new": 185
+},
+{
+"t": 5.451297525325577,
+"type": "coal",
+"a": 70,
+"b": 71,
+"new": 186
+},
+{
+"t": 5.46575342893897,
+"type": "sample",
+"id": 2,
+"deme": 3
+},
+{
+"t": 5.520547949600591,
+"type": "sample",
+"id": 87,
+"deme": 1
+},
+{
+"t": 5.530349478001012,
+"type": "coal",
+"a": 72,
+"b": 73,
+"new": 187
+},
+{
+"t": 5.539726031734167,
+"type": "sample",
+"id": 86,
+"deme": 1
+},
+{
+"t": 5.542465757602023,
+"type": "sample",
+"id": 5,
+"deme": 3
+},
+{
+"t": 5.576935184441928,
+"type": "coal",
+"a": 175,
+"b": 62,
+"new": 188
+},
+{
+"t": 5.620231861543833,
+"type": "coal",
+"a": 186,
+"b": 187,
+"new": 189
+},
+{
+"t": 5.621917812073732,
+"type": "sample",
+"id": 64,
+"deme": 1
+},
+{
+"t": 5.628005282773189,
+"type": "coal",
+"a": 2,
+"b": 184,
+"new": 190
+},
+{
+"t": 5.654287627062234,
+"type": "coal",
+"a": 86,
+"b": 87,
+"new": 191
+},
+{
+"t": 5.676669716374505,
+"type": "coal",
+"a": 5,
+"b": 6,
+"new": 192
+},
+{
+"t": 5.7346740711311,
+"type": "coal",
+"a": 190,
+"b": 192,
+"new": 193
+},
+{
+"t": 5.775485890671922,
+"type": "coal",
+"a": 183,
+"b": 69,
+"new": 194
+},
+{
+"t": 5.79040715548199,
+"type": "coal",
+"a": 193,
+"b": 185,
+"new": 195
+},
+{
+"t": 5.841095895535649,
+"type": "sample",
+"id": 84,
+"deme": 0
+},
+{
+"t": 5.850239880378617,
+"type": "coal",
+"a": 63,
+"b": 64,
+"new": 196
+},
+{
+"t": 5.868493155506496,
+"type": "sample",
+"id": 83,
+"deme": 1
+},
+{
+"t": 6.019178084371739,
+"type": "sample",
+"id": 118,
+"deme": 4
+},
+{
+"t": 6.0191780844071925,
+"type": "sample",
+"id": 80,
+"deme": 5
+},
+{
+"t": 6.019178084650869,
+"type": "sample",
+"id": 107,
+"deme": 4
+},
+{
+"t": 6.019178084656362,
+"type": "sample",
+"id": 113,
+"deme": 4
+},
+{
+"t": 6.019178084675966,
+"type": "sample",
+"id": 104,
+"deme": 4
+},
+{
+"t": 6.019178084679336,
+"type": "sample",
+"id": 105,
+"deme": 4
+},
+{
+"t": 6.019178084681954,
+"type": "sample",
+"id": 103,
+"deme": 4
+},
+{
+"t": 6.019178084689028,
+"type": "sample",
+"id": 115,
+"deme": 4
+},
+{
+"t": 6.0191780847749685,
+"type": "sample",
+"id": 119,
+"deme": 4
+},
+{
+"t": 6.019178084824474,
+"type": "sample",
+"id": 102,
+"deme": 4
+},
+{
+"t": 6.019178085029713,
+"type": "sample",
+"id": 90,
+"deme": 4
+},
+{
+"t": 6.0191780850404975,
+"type": "sample",
+"id": 93,
+"deme": 4
+},
+{
+"t": 6.019178085048647,
+"type": "sample",
+"id": 92,
+"deme": 4
+},
+{
+"t": 6.019178085049922,
+"type": "sample",
+"id": 91,
+"deme": 4
+},
+{
+"t": 6.019178085082671,
+"type": "sample",
+"id": 95,
+"deme": 4
+},
+{
+"t": 6.019178085092067,
+"type": "sample",
+"id": 97,
+"deme": 4
+},
+{
+"t": 6.0191780851736105,
+"type": "sample",
+"id": 98,
+"deme": 4
+},
+{
+"t": 6.019178085217091,
+"type": "sample",
+"id": 96,
+"deme": 4
+},
+{
+"t": 6.019178085239202,
+"type": "sample",
+"id": 94,
+"deme": 4
+},
+{
+"t": 6.035657960722716,
+"type": "coal",
+"a": 90,
+"b": 91,
+"new": 197
+},
+{
+"t": 6.048260554103316,
+"type": "coal",
+"a": 95,
+"b": 96,
+"new": 198
+},
+{
+"t": 6.060082756182205,
+"type": "coal",
+"a": 94,
+"b": 198,
+"new": 199
+},
+{
+"t": 6.06346323188393,
+"type": "coal",
+"a": 197,
+"b": 92,
+"new": 200
+},
+{
+"t": 6.06712445089956,
+"type": "coal",
+"a": 102,
+"b": 103,
+"new": 201
+},
+{
+"t": 6.078824220645193,
+"type": "coal",
+"a": 199,
+"b": 97,
+"new": 202
+},
+{
+"t": 6.082191783262503,
+"type": "sample",
+"id": 108,
+"deme": 4
+},
+{
+"t": 6.082191783344033,
+"type": "sample",
+"id": 111,
+"deme": 4
+},
+{
+"t": 6.082191783352356,
+"type": "sample",
+"id": 106,
+"deme": 4
+},
+{
+"t": 6.082191783401935,
+"type": "sample",
+"id": 101,
+"deme": 4
+},
+{
+"t": 6.084931509298557,
+"type": "sample",
+"id": 114,
+"deme": 4
+},
+{
+"t": 6.084931509300785,
+"type": "sample",
+"id": 112,
+"deme": 4
+},
+{
+"t": 6.08493150933027,
+"type": "sample",
+"id": 99,
+"deme": 4
+},
+{
+"t": 6.084931509398226,
+"type": "sample",
+"id": 100,
+"deme": 4
+},
+{
+"t": 6.084931509407725,
+"type": "sample",
+"id": 110,
+"deme": 4
+},
+{
+"t": 6.0849315094103735,
+"type": "sample",
+"id": 117,
+"deme": 4
+},
+{
+"t": 6.084931509418328,
+"type": "sample",
+"id": 116,
+"deme": 4
+},
+{
+"t": 6.0849315097860694,
+"type": "sample",
+"id": 88,
+"deme": 4
+},
+{
+"t": 6.0849315097860694,
+"type": "sample",
+"id": 89,
+"deme": 4
+},
+{
+"t": 6.087462865263537,
+"type": "coal",
+"a": 200,
+"b": 93,
+"new": 203
+},
+{
+"t": 6.092423027880294,
+"type": "coal",
+"a": 105,
+"b": 106,
+"new": 204
+},
+{
+"t": 6.095775742165504,
+"type": "coal",
+"a": 113,
+"b": 114,
+"new": 205
+},
+{
+"t": 6.097128203687801,
+"type": "coal",
+"a": 104,
+"b": 204,
+"new": 206
+},
+{
+"t": 6.0986301394950075,
+"type": "sample",
+"id": 109,
+"deme": 4
+},
+{
+"t": 6.09889231767054,
+"type": "coal",
+"a": 88,
+"b": 89,
+"new": 207
+},
+{
+"t": 6.10033596112202,
+"type": "coal",
+"a": 202,
+"b": 98,
+"new": 208
+},
+{
+"t": 6.101161737064708,
+"type": "coal",
+"a": 116,
+"b": 117,
+"new": 209
+},
+{
+"t": 6.108417141071186,
+"type": "coal",
+"a": 201,
+"b": 206,
+"new": 210
+},
+{
+"t": 6.109368810371105,
+"type": "coal",
+"a": 210,
+"b": 107,
+"new": 211
+},
+{
+"t": 6.112239673056938,
+"type": "coal",
+"a": 109,
+"b": 110,
+"new": 212
+},
+{
+"t": 6.112749459127061,
+"type": "coal",
+"a": 112,
+"b": 205,
+"new": 213
+},
+{
+"t": 6.119520969626419,
+"type": "coal",
+"a": 100,
+"b": 101,
+"new": 214
+},
+{
+"t": 6.140652903551523,
+"type": "coal",
+"a": 195,
+"b": 9,
+"new": 215
+},
+{
+"t": 6.143047104545985,
+"type": "coal",
+"a": 214,
+"b": 211,
+"new": 216
+},
+{
+"t": 6.143961895722896,
+"type": "coal",
+"a": 216,
+"b": 108,
+"new": 217
+},
+{
+"t": 6.1486841793068505,
+"type": "coal",
+"a": 209,
+"b": 118,
+"new": 218
+},
+{
+"t": 6.1497239197681965,
+"type": "coal",
+"a": 217,
+"b": 212,
+"new": 219
+},
+{
+"t": 6.151266418458272,
+"type": "coal",
+"a": 207,
+"b": 203,
+"new": 220
+},
+{
+"t": 6.172181434792171,
+"type": "coal",
+"a": 219,
+"b": 111,
+"new": 221
+},
+{
+"t": 6.183951129461638,
+"type": "coal",
+"a": 213,
+"b": 115,
+"new": 222
+},
+{
+"t": 6.191171699146385,
+"type": "coal",
+"a": 99,
+"b": 221,
+"new": 223
+},
+{
+"t": 6.199199583812194,
+"type": "coal",
+"a": 220,
+"b": 208,
+"new": 224
+},
+{
+"t": 6.206538823854785,
+"type": "coal",
+"a": 222,
+"b": 218,
+"new": 225
+},
+{
+"t": 6.218543368221108,
+"type": "coal",
+"a": 225,
+"b": 119,
+"new": 226
+},
+{
+"t": 6.272526317939029,
+"type": "coal",
+"a": 74,
+"b": 173,
+"new": 227
+},
+{
+"t": 6.277828500231129,
+"type": "coal",
+"a": 223,
+"b": 226,
+"new": 228
+},
+{
+"t": 6.2830618075797195,
+"type": "coal",
+"a": 12,
+"b": 13,
+"new": 229
+},
+{
+"t": 6.347945210374219,
+"type": "sample",
+"id": 85,
+"deme": 3
+},
+{
+"t": 6.372406313857913,
+"type": "coal",
+"a": 215,
+"b": 180,
+"new": 230
+},
+{
+"t": 6.506629711748779,
+"type": "coal",
+"a": 82,
+"b": 83,
+"new": 231
+},
+{
+"t": 6.515622579987163,
+"type": "coal",
+"a": 230,
+"b": 229,
+"new": 232
+},
+{
+"t": 6.517808222287918,
+"type": "sample",
+"id": 77,
+"deme": 4
+},
+{
+"t": 6.523830450300928,
+"type": "coal",
+"a": 182,
+"b": 188,
+"new": 233
+},
+{
+"t": 6.524382189718483,
+"type": "coal",
+"a": 224,
+"b": 228,
+"new": 234
+},
+{
+"t": 6.692643693545214,
+"type": "coal",
+"a": 233,
+"b": 196,
+"new": 235
+},
+{
+"t": 6.71962402763376,
+"type": "coal",
+"a": 1,
+"b": 232,
+"new": 236
+},
+{
+"t": 6.732472344619131,
+"type": "coal",
+"a": 194,
+"b": 189,
+"new": 237
+},
+{
+"t": 6.827149496691607,
+"type": "coal",
+"a": 231,
+"b": 84,
+"new": 238
+},
+{
+"t": 6.852273700202076,
+"type": "coal",
+"a": 236,
+"b": 235,
+"new": 239
+},
+{
+"t": 7.019178082372279,
+"type": "sample",
+"id": 128,
+"deme": 1
+},
+{
+"t": 7.019178084706239,
+"type": "sample",
+"id": 78,
+"deme": 4
+},
+{
+"t": 7.019178085268336,
+"type": "sample",
+"id": 79,
+"deme": 4
+},
+{
+"t": 7.019178085582847,
+"type": "sample",
+"id": 81,
+"deme": 4
+},
+{
+"t": 7.024557635900024,
+"type": "coal",
+"a": 239,
+"b": 237,
+"new": 240
+},
+{
+"t": 7.062618366366754,
+"type": "coal",
+"a": 79,
+"b": 80,
+"new": 241
+},
+{
+"t": 7.247346550779397,
+"type": "coal",
+"a": 240,
+"b": 227,
+"new": 242
+},
+{
+"t": 7.315507382483879,
+"type": "coal",
+"a": 77,
+"b": 78,
+"new": 243
+},
+{
+"t": 7.464231439927154,
+"type": "coal",
+"a": 243,
+"b": 241,
+"new": 244
+},
+{
+"t": 7.4774501762624945,
+"type": "coal",
+"a": 85,
+"b": 191,
+"new": 245
+},
+{
+"t": 7.664566720860015,
+"type": "coal",
+"a": 244,
+"b": 81,
+"new": 246
+},
+{
+"t": 7.805479455883301,
+"type": "sample",
+"id": 121,
+"deme": 5
+},
+{
+"t": 7.845844888017753,
+"type": "coal",
+"a": 242,
+"b": 246,
+"new": 247
+},
+{
+"t": 8.019178083153138,
+"type": "sample",
+"id": 129,
+"deme": 1
+},
+{
+"t": 8.019178083251346,
+"type": "sample",
+"id": 127,
+"deme": 1
+},
+{
+"t": 8.019178086217128,
+"type": "sample",
+"id": 120,
+"deme": 4
+},
+{
+"t": 8.019178086242295,
+"type": "sample",
+"id": 122,
+"deme": 4
+},
+{
+"t": 8.019178086286905,
+"type": "sample",
+"id": 123,
+"deme": 5
+},
+{
+"t": 8.071808756429396,
+"type": "coal",
+"a": 120,
+"b": 121,
+"new": 248
+},
+{
+"t": 8.091653899979868,
+"type": "coal",
+"a": 122,
+"b": 123,
+"new": 249
+},
+{
+"t": 8.098117217522837,
+"type": "coal",
+"a": 127,
+"b": 128,
+"new": 250
+},
+{
+"t": 8.104109590017877,
+"type": "sample",
+"id": 130,
+"deme": 1
+},
+{
+"t": 8.131415347441365,
+"type": "coal",
+"a": 245,
+"b": 234,
+"new": 251
+},
+{
+"t": 8.216749759192732,
+"type": "coal",
+"a": 248,
+"b": 249,
+"new": 252
+},
+{
+"t": 8.277245140225611,
+"type": "coal",
+"a": 250,
+"b": 129,
+"new": 253
+},
+{
+"t": 8.507929863066648,
+"type": "coal",
+"a": 253,
+"b": 130,
+"new": 254
+},
+{
+"t": 8.959436567959674,
+"type": "coal",
+"a": 247,
+"b": 238,
+"new": 255
+},
+{
+"t": 9.161737255841091,
+"type": "coal",
+"a": 255,
+"b": 251,
+"new": 256
+},
+{
+"t": 10.0191780871418,
+"type": "sample",
+"id": 0,
+"deme": 6
+},
+{
+"t": 10.01917808718723,
+"type": "sample",
+"id": 131,
+"deme": 6
+},
+{
+"t": 10.340515064111276,
+"type": "coal",
+"a": 256,
+"b": 252,
+"new": 257
+},
+{
+"t": 10.904109593591006,
+"type": "sample",
+"id": 124,
+"deme": 1
+},
+{
+"t": 10.90684931928555,
+"type": "sample",
+"id": 125,
+"deme": 1
+},
+{
+"t": 11.019178086260933,
+"type": "sample",
+"id": 132,
+"deme": 4
+},
+{
+"t": 11.01917808646083,
+"type": "sample",
+"id": 126,
+"deme": 1
+},
+{
+"t": 11.190692494979537,
+"type": "coal",
+"a": 125,
+"b": 126,
+"new": 258
+},
+{
+"t": 11.310534200152306,
+"type": "coal",
+"a": 124,
+"b": 258,
+"new": 259
+},
+{
+"t": 11.6159314358533,
+"type": "coal",
+"a": 0,
+"b": 257,
+"new": 260
+},
+{
+"t": 11.765081776504775,
+"type": "coal",
+"a": 260,
+"b": 259,
+"new": 261
+},
+{
+"t": 11.82858439798119,
+"type": "coal",
+"a": 261,
+"b": 254,
+"new": 262
+},
+{
+"t": 11.90333998998581,
+"type": "coal",
+"a": 262,
+"b": 131,
+"new": 263
+},
+{
+"t": 12.330159061922261,
+"type": "coal",
+"a": 263,
+"b": 132,
+"new": 264
+}
+],
+"tip_labels": [
+"H7N1_ans_A/blue-wingedteal/Texas/578575/2002_USA_Texas_2002|Texas|2002.45205479452|center_6",
+"H7N2_ans_A/northernshoveler/California/JN1447/2007_USA_California_2007|California|2007.0904109589|southeast_3",
+"H7N3_ans_A/Americangreen-wingedteal/California/44242-906/2007_USA_California_2007|California|2007.00547945205|southeast_3",
+"H7N3_ans_A/Americangreen-wingedteal/California/44287-084/2007_USA_California_2007|California|2007.06301369863|southeast_3",
+"H7N3_ans_A/northernshoveler/California/27820/2007_USA_California_2007|California|2007.06301369863|southeast_3",
+"H7N3_ans_A/cinnamonteal/California/JN611/2006_USA_California_2006|California|2006.92876712329|southeast_3",
+"H7N7_ans_A/northernshoveler/California/44287-164/2007_USA_California_2007|California|2007.06301369863|southeast_3",
+"H7N3_ans_A/northernshoveler/California/28327/2007_USA_California_2007|California|2007.07123287671|southeast_3",
+"H7N3_ans_A/northernshoveler/California/44287-364/2007_USA_California_2007|California|2007.07123287671|southeast_3",
+"H7N3_ans_A/Canadagoose/BC/3752/2007_Canada_BritishColumbia_2007|BritishColumbia|2007.45205479452|northwest_1",
+"H7N3_ans_A/greenwingedteal/California/AKS1370/2008_USA_California_2008|California|2008.07123287671|southeast_3",
+"H7N3_ans_A/northernshoveler/California/HKWF2031/2008_USA_California_2008|California|2008.0602739726|southeast_3",
+"H7N3_gal_A/chicken/SK/HR-00011/2007_Canada_Saskatchewan_2007|Saskatchewan|2007.45205479452|northwest_1",
+"H7N7_ans_A/mallard/California/HKWF1971/2007_USA_California_2007|California|2007.97534246575|southeast_3",
+"H7N3_ans_A/Americangreen-wingedteal/Illinois/10OS4014/2010_USA_Illinois_2010|Illinois|2010.90410958904|northmideast_5",
+"H7N8_ans_A/Americanblackduck/Wisconsin/10OS3949/2010_USA_Wisconsin_2010|Wisconsin|2010.87945205479|northmideast_5",
+"H7N3_gal_A/chicken/Jalisco/12283/2012_Mexico_Jalisco_2012|Jalisco|2012.47123287671|southeast_3",
+"H7N3_gal_A/chicken/Jalisco/CPA1/2012_Mexico_Jalisco_2012|Jalisco|2012.44657534247|southeast_3",
+"H7N3_ans_A/northernshoveler/Missouri/10OS4750/2010_USA_Missouri_2010|Missouri|2010.94520547945|center_6",
+"H7N7_ans_A/mallard/Missouri/10MO0551/2010_USA_Missouri_2010|Missouri|2010.99178082192|center_6",
+"H7N9_ans_A/northernshoverl/Mississippi/11OS145/2011_USA_Mississippi_2011|Mississippi|2011.01917808219|center_6",
+"H7N9_ans_A/goose/Nebraska/17097-4/2011_USA_Nebraska_2011|Nebraska|2011.25753424658|center_6",
+"H7N9_ans_A/guineafowl/Nebraska/17096-1/2011_USA_Nebraska_2011|Nebraska|2011.25753424658|center_6",
+"H7N3_ans_A/Americangreen-wingedteal/Mississippi/11OS250/2011_USA_Mississippi_2011|Mississippi|2011.03835616438|center_6",
+"H7N7_ans_A/Americangreen-wingedteal/Mississippi/11OS255/2011_USA_Mississippi_2011|Mississippi|2011.03835616438|center_6",
+"H7N7_ans_A/northernshoveler/Mississippi/11OS202/2011_USA_Mississippi_2011|Mississippi|2011.03561643836|center_6",
+"H7N7_ans_A/northernshoveler/Missouri/10OS4632/2010_USA_Missouri_2010|Missouri|2010.94520547945|center_6",
+"H7N7_ans_A/Americangreen-wingedteal/Illinois/10OS3329/2010_USA_Illinois_2010|Illinois|2010.82739726027|northmideast_5",
+"H7N3_ans_A/gadwall/Missouri/10OS4731/2010_USA_Missouri_2010|Missouri|2010.94520547945|center_6",
+"H7N3_ans_A/northernshoveler/Mississippi/11OS289/2011_USA_Mississippi_2011|Mississippi|2011.04109589041|center_6",
+"H7N6_ans_A/commongoldeneye/Wisconsin/10OS4202/2010_USA_Wisconsin_2010|Wisconsin|2010.91780821918|northmideast_5",
+"H7N3_ans_A/blue-wingedTeal/NorthDakota/AI09-3760/2009_USA_NorthDakota_2009|NorthDakota|2009.67397260274|northwest_1",
+"H7N7_ans_A/Americanblackduck/NewBrunswick/00344/2010_Canada_NewBrunswick_2010|NewBrunswick|2010.6|northeast_2",
+"H7N7_ans_A/green-wingedteal/NewBrunswick/00392/2010_Canada_NewBrunswick_2010|NewBrunswick|2010.60273972603|northeast_2",
+"H7N7_ans_A/Americangreen-wingedteal/Mississippi/09OS046/2009_USA_Mississippi_2009|Mississippi|2009.02191780822|center_6",
+"H7N7_ans_A/northernshoveler/Mississippi/09OS643/2009_USA_Mississippi_2009|Mississippi|2009.03835616438|center_6",
+"H7N3_ans_A/mallard/InteriorAlaska/10BM04564R1/2010_USA_InteriorAlaska_2010|InteriorAlaska|2010.54246575342|alaska_0",
+"H7N3_ans_A/mallard/InteriorAlaska/10BM07072R0/2010_USA_InteriorAlaska_2010|InteriorAlaska|2010.45205479452|alaska_0",
+"H7N3_ans_A/northernpintail/InteriorAlaska/10BM06524R0/2010_USA_InteriorAlaska_2010|InteriorAlaska|2010.57534246575|alaska_0",
+"H7N3_ans_A/mallard/InteriorAlaska/10BM07085R0/2010_USA_InteriorAlaska_2010|InteriorAlaska|2010.45205479452|alaska_0",
+"H7N3_ans_A/mallard/InteriorAlaska/10BM12534R0/2010_USA_InteriorAlaska_2010|InteriorAlaska|2010.45205479452|alaska_0",
+"H7N3_ans_A/northernpintail/InteriorAlaska/10BM07399R0/2010_USA_InteriorAlaska_2010|InteriorAlaska|2010.45205479452|alaska_0",
+"H7N3_ans_A/northernpintail/InteriorAlaska/10BM07469R0/2010_USA_InteriorAlaska_2010|InteriorAlaska|2010.45205479452|alaska_0",
+"H7N3_ans_A/mallard/InteriorAlaska/10BM10829R0/2010_USA_InteriorAlaska_2010|InteriorAlaska|2010.60547945205|alaska_0",
+"H7N3_ans_A/northernpintail/InteriorAlaska/10BM11208R0/2010_USA_InteriorAlaska_2010|InteriorAlaska|2010.45205479452|alaska_0",
+"H7N3_ans_A/mallard/InteriorAlaska/10BM09528R0/2010_USA_InteriorAlaska_2010|InteriorAlaska|2010.45205479452|alaska_0",
+"H7N6_ans_A/northernpintail/InteriorAlaska/10BM09015R0/2010_USA_InteriorAlaska_2010|InteriorAlaska|2010.45205479452|alaska_0",
+"H7N3_ans_A/mallard/InteriorAlaska/10BM09563R0/2010_USA_InteriorAlaska_2010|InteriorAlaska|2010.45205479452|alaska_0",
+"H7N3_ans_A/northernpintail/InteriorAlaska/10BM10476R0/2010_USA_InteriorAlaska_2010|InteriorAlaska|2010.45205479452|alaska_0",
+"H7N3_ans_A/northernpintail/InteriorAlaska/10BM10166R0/2010_USA_InteriorAlaska_2010|InteriorAlaska|2010.45205479452|alaska_0",
+"H7N3_ans_A/mallard/InteriorAlaska/10CH00016R0/2010_USA_InteriorAlaska_2010|InteriorAlaska|2010.45205479452|alaska_0",
+"H7N3_ans_A/northernpintail/Illinois/10OS3959/2010_USA_Illinois_2010|Illinois|2010.88767123288|northmideast_5",
+"H7N3_ans_A/northernpintail/InteriorAlaska/10BM02539R0/2010_USA_InteriorAlaska_2010|InteriorAlaska|2010.47123287671|alaska_0",
+"H7N5_ans_A/mallard/California/1390/2010_USA_California_2010|California|2010.58904109589|southeast_3",
+"H7N3_ans_A/mallard/Missouri/220/2009_USA_Missouri_2009|Missouri|2009.93150684932|center_6",
+"H7N4_ans_A/mallard/Missouri/10MO053/2010_USA_Missouri_2010|Missouri|2010.87397260274|center_6",
+"H7N3_ans_A/mallard/Wisconsin/10OS3171/2010_USA_Wisconsin_2010|Wisconsin|2010.82739726027|northmideast_5",
+"H7N3_ans_A/northernshoveler/Wisconsin/10OS3226/2010_USA_Wisconsin_2010|Wisconsin|2010.85753424658|northmideast_5",
+"H7N8_ans_A/mallard/Ohio/11OS2010/2011_USA_Ohio_2011|Ohio|2011.61917808219|northmideast_5",
+"H7N3_ans_A/northernpintail/InteriorAlaska/8MP0262R2/2008_USA_InteriorAlaska_2008|InteriorAlaska|2008.6|alaska_0",
+"H7N3_ans_A/green-wingedteal/California/11275/2008_USA_California_2008|California|2008.94794520548|southeast_3",
+"H7N3_ans_A/green-wingedteal/California/1841/2009_USA_California_2009|California|2009.04657534247|southeast_3",
+"H7N3_ans_A/northernshoveler/California/HKWF1026/2007_USA_California_2007|California|2007.91780821918|southeast_3",
+"H7N3_ans_A/northernshoveler/California/HKWF1372C/2007_USA_California_2007|California|2007.94520547945|southeast_3",
+"H7N3_ans_A/northernshoveler/Washington/44249-664/2006_USA_Washington_2006|Washington|2006.84931506849|northwest_1",
+"H7N3_ans_A/Americanblackduck/NB/2538/2007_Canada_NewBrunswick_2007|NewBrunswick|2007.45205479452|northeast_2",
+"H7N3_ans_A/Americanblackduck/NewBrunswick/02490/2007_Canada_NewBrunswick_2007|NewBrunswick|2007.7095890411|northeast_2",
+"H7N3_ans_A/Americanblackduck/NewBrunswick/02493/2007_Canada_NewBrunswick_2007|NewBrunswick|2007.7095890411|northeast_2",
+"H7N3_ans_A/Americanblackduck/NewBrunswick/04388/2007_Canada_NewBrunswick_2007|NewBrunswick|2007.62191780822|northeast_2",
+"H7N4_ans_A/mallard/NovaScotia/02286/2007_Canada_NovaScotia_2007|NovaScotia|2007.63561643836|northeast_2",
+"H7N6_ans_A/Americangreen-wingedteal/California/28228/2007_USA_California_2007|California|2007.07123287671|southeast_3",
+"H7N6_ans_A/Americangreen-wingedteal/California/44287-305/2007_USA_California_2007|California|2007.07123287671|southeast_3",
+"H7N6_ans_A/northernshoveler/California/27985/2007_USA_California_2007|California|2007.06301369863|southeast_3",
+"H7N6_ans_A/northernshoveler/California/44287-179/2007_USA_California_2007|California|2007.06301369863|southeast_3",
+"H7N3_cha_A/ruddyturnstone/DelawareBay/124/2007_USA_DelawareBay_2007|DelawareBay|2007.38630136986|eastcoast_4",
+"H7N6_ans_A/blackscoter/NewBrunswick/00003/2009_Canada_NewBrunswick_2009|NewBrunswick|2009.09589041096|northeast_2",
+"H7N6_ans_A/blackscoter/NewBrunswick/00014/2009_Canada_NewBrunswick_2009|NewBrunswick|2009.33150684932|northeast_2",
+"H7N3_ans_A/mallard/Delaware/418/2005_USA_Delaware_2005|Delaware|2005.95342465753|eastcoast_4",
+"H7N3_ans_A/northernshoveler/NorthCarolina/6412-050/2005_USA_NorthCarolina_2005|NorthCarolina|2005.45205479452|eastcoast_4",
+"H7N3_ans_A/northernshoveler/NorthCarolina/674-516/2005_USA_NorthCarolina_2005|NorthCarolina|2005.45205479452|eastcoast_4",
+"H7N9_ans_A/blue-wingedteal/Ohio/566/2006_USA_Ohio_2006|Ohio|2006.45205479452|northmideast_5",
+"H7N6_ans_A/Northernshoveler/NC/6412-052/2005_USA_NorthCarolina_2005|NorthCarolina|2005.45205479452|eastcoast_4",
+"H7N3_ans_A/cinnamonteal/California/JN1310/2007_USA_California_2007|California|2007.05205479452|southeast_3",
+"H7N3_ans_A/mallard/Alberta/243/2006_Canada_Alberta_2006|Alberta|2006.60273972603|northwest_1",
+"H7N3_ans_A/mallard/InteriorAlaska/6MP0984/2006_USA_InteriorAlaska_2006|InteriorAlaska|2006.6301369863|alaska_0",
+"H7N3_ans_A/cinnamonteal/Mexico/2817/2006_Mexico_Mexico_2006|Mexico|2006.12328767123|southeast_3",
+"H7N3_ans_A/northernshoveler/Washington/44249-749/2006_USA_Washington_2006|Washington|2006.93150684932|northwest_1",
+"H7N3_ans_A/northernshoveler/Washington/44249-783/2006_USA_Washington_2006|Washington|2006.95068493151|northwest_1",
+"H7N3_cha_A/laughinggull/DelawareBay/42/2006_USA_DelawareBay_2006|DelawareBay|2006.38630136986|eastcoast_4",
+"H7N3_cha_A/laughinggull/DelawareBay/46/2006_USA_DelawareBay_2006|DelawareBay|2006.38630136986|eastcoast_4",
+"H7N3_cha_A/ruddyturnstone/Delaware/890/2006_USA_Delaware_2006|Delaware|2006.45205479452|eastcoast_4",
+"H7N3_cha_A/ruddyturnstone/NewJersey/176/2006_USA_NewJersey_2006|NewJersey|2006.45205479452|eastcoast_4",
+"H7N3_pas_A/sanderling/NewJersey/355/2006_USA_NewJersey_2006|NewJersey|2006.45205479452|eastcoast_4",
+"H7N3_cha_A/ruddyturnstone/NewJersey/612/2006_USA_NewJersey_2006|NewJersey|2006.45205479452|eastcoast_4",
+"H7N3_cha_A/ruddyturnstone/NewJersey/215/2006_USA_NewJersey_2006|NewJersey|2006.45205479452|eastcoast_4",
+"H7N3_pas_A/sanderling/NewJersey/369/2006_USA_NewJersey_2006|NewJersey|2006.45205479452|eastcoast_4",
+"H7N7_cha_A/ruddyturnstone/Delaware/752/2006_USA_Delaware_2006|Delaware|2006.45205479452|eastcoast_4",
+"H7N4_cha_A/ruddyturnstone/NewJersey/604/2006_USA_NewJersey_2006|NewJersey|2006.45205479452|eastcoast_4",
+"H7N3_cha_A/ruddyturnstone/NewJersey/490/2006_USA_NewJersey_2006|NewJersey|2006.45205479452|eastcoast_4",
+"H7N3_cha_A/laughinggull/DelawareBay/50/2006_USA_DelawareBay_2006|DelawareBay|2006.38630136986|eastcoast_4",
+"H7N3_cha_A/laughinggull/DelawareBay/6/2006_USA_DelawareBay_2006|DelawareBay|2006.38630136986|eastcoast_4",
+"H7N3_cha_A/shorebird/DelawareBay/513/2006_USA_DelawareBay_2006|DelawareBay|2006.38904109589|eastcoast_4",
+"H7N3_cha_A/ruddyturnstone/Delaware/779/2006_USA_Delaware_2006|Delaware|2006.45205479452|eastcoast_4",
+"H7N3_cha_A/ruddyturnstone/NewJersey/576/2006_USA_NewJersey_2006|NewJersey|2006.45205479452|eastcoast_4",
+"H7N3_cha_A/ruddyturnstone/NewJersey/562/2006_USA_NewJersey_2006|NewJersey|2006.45205479452|eastcoast_4",
+"H7N3_cha_A/shorebird/Delaware/22/06_USA_Delaware_2006|Delaware|2006.45205479452|eastcoast_4",
+"H7N3_cha_A/shorebird/DelawareBay/560/2006_USA_DelawareBay_2006|DelawareBay|2006.38904109589|eastcoast_4",
+"H7N3_cha_A/ruddyturnstone/Delaware/789/2006_USA_Delaware_2006|Delaware|2006.45205479452|eastcoast_4",
+"H7N3_cha_A/shorebird/DelawareBay/332/2006_USA_DelawareBay_2006|DelawareBay|2006.38904109589|eastcoast_4",
+"H7N3_cha_A/redknot/NewJersey/AI06-096/2006_USA_NewJersey_2006|NewJersey|2006.37260273973|eastcoast_4",
+"H7N3_gal_A/avian/DelawareBay/226/2006_USA_DelawareBay_2006|DelawareBay|2006.38630136986|eastcoast_4",
+"H7N3_cha_A/shorebird/DelawareBay/555/2006_USA_DelawareBay_2006|DelawareBay|2006.38904109589|eastcoast_4",
+"H7N3_cha_A/ruddyturnstone/DelawareBay/262/2006_USA_DelawareBay_2006|DelawareBay|2006.38630136986|eastcoast_4",
+"H7N3_cha_A/ruddyturnstone/NewJersey/224/2006_USA_NewJersey_2006|NewJersey|2006.45205479452|eastcoast_4",
+"H7N4_cha_A/ruddyturnstone/DelawareBay/290/2006_USA_DelawareBay_2006|DelawareBay|2006.38630136986|eastcoast_4",
+"H7N3_cha_A/ruddyturnstone/NewJersey/204/2006_USA_NewJersey_2006|NewJersey|2006.45205479452|eastcoast_4",
+"H7N3_cha_A/ruddyturnstone/DelawareBay/281/2006_USA_DelawareBay_2006|DelawareBay|2006.38630136986|eastcoast_4",
+"H7N3_cha_A/ruddyturnstone/DelawareBay/283/2006_USA_DelawareBay_2006|DelawareBay|2006.38630136986|eastcoast_4",
+"H7N7_cha_A/ruddyturnstone/Delaware/892/2006_USA_Delaware_2006|Delaware|2006.45205479452|eastcoast_4",
+"H7N3_cha_A/ruddyturnstone/NewJersey/589/2006_USA_NewJersey_2006|NewJersey|2006.45205479452|eastcoast_4",
+"H7N3_ans_A/blue-wingedteal/MD/658/2004_USA_Maryland_2004|Maryland|2004.45205479452|eastcoast_4",
+"H7N3_ans_A/blue-wingedteal/Ohio/658/2004_USA_Ohio_2004|Ohio|2004.66575342466|northmideast_5",
+"H7N3_ans_A/green-wingedteal/MD/648/2004_USA_Maryland_2004|Maryland|2004.45205479452|eastcoast_4",
+"H7N3_ans_A/green-wingedteal/Ohio/648/2004_USA_Ohio_2004|Ohio|2004.45205479452|northmideast_5",
+"H7N1_ans_A/mallard/Alberta/34/2001_Canada_Alberta_2001|Alberta|2001.56712328767|northwest_1",
+"H7N3_ans_A/mallard/Alberta/22/2001_Canada_Alberta_2001|Alberta|2001.56438356164|northwest_1",
+"H7N3_ans_A/mallard/Alberta/24/01_Canada_Alberta_2001|Alberta|2001.45205479452|northwest_1",
+"H7N3_gal_A/chicken/BritishColumbia/04_Canada_BritishColumbia_2004|BritishColumbia|2004.45205479452|northwest_1",
+"H7N3_gal_A/chicken/Canada/314514-1/2005_Canada_BritishColumbia_2005|BritishColumbia|2005.45205479452|northwest_1",
+"H7N3_gal_A/chicken/BritishColumbia/CN-7/2004_Canada_BritishColumbia_2004|BritishColumbia|2004.45205479452|northwest_1",
+"H7N3_gal_A/chicken/BritishColumbia/NS-01827-4/2004_Canada_BritishColumbia_2004|BritishColumbia|2004.36712328767|northwest_1",
+"H7N3_ans_A/blue-wingedteal/Texas/578585/2002_USA_Texas_2002|Texas|2002.45205479452|center_6",
+"H7N3_ans_A/duck/PA/143585/2001_USA_Pennsylvania_2001|Pennsylvania|2001.45205479452|eastcoast_4"
+]
+}

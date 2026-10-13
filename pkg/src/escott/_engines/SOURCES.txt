@@ -1,0 +1,4 @@
+esco_tt.py  <-  esco/tt/esco_tt.py  sha256:9ae8c4d189847a1b
+ttcore.py  <-  esco/tt/ttcore.py  sha256:6ba81744c68b453e
+esco_dense.py  <-  esco/dense/esco_dense.py  sha256:0db149ec7dd657ff
+mascot.py  <-  esco/approx/mascot.py  sha256:056a35f1dd3dc0bf

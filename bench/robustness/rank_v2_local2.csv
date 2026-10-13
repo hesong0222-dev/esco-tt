@@ -1,0 +1,2 @@
+tree,eps,eps_total,steps_mult,s_max,order,mass_fix,loglik,max_rank,n_round,n_steps,runtime,err
+d4_k20_medium_s1.json,1e-06,,1,0.25,4,0,-44.60558206486436,74,6326,369,1200.6,

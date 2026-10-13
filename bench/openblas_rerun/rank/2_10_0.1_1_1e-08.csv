@@ -1,0 +1,2 @@
+d,k,m,seed,eps,rmax,loglik,max_rank,runtime,n_steps,n_mig,tmrca,err
+2,10,0.1,1,1e-08,,-14.256830721788827,6,0.4,75,3,5.302,
